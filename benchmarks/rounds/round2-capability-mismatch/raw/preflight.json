@@ -1,0 +1,22 @@
+{
+ "utc": "2026-09-22 18:32:07",
+ "container_uptime_s": 483,
+ "gpu": "NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB, 400.00 W, 1410 MHz, Enabled",
+ "versions": {
+  "torch": "2.8.0+cu128",
+  "diffusers": "0.40.0",
+  "python": "3.12.3"
+ },
+ "host": {
+  "loadavg": "42.14 40.38 37.95 44/7766 2483",
+  "nproc": "256",
+  "mem": "2015G total 1903G avail"
+ },
+ "fails": [],
+ "matmul_bf16_tflops": 243,
+ "vram_total_gb": 85.1,
+ "cache_fstype": "overlay",
+ "weights": "downloading",
+ "download_s": 463.1,
+ "disk_free_gb": 88.2
+}

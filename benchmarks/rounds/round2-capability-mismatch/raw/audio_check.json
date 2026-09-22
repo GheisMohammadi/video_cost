@@ -1,0 +1,32 @@
+[
+ {
+  "job": "W0_warmup",
+  "category": "warmup",
+  "has_audio": false
+ },
+ {
+  "job": "M1_audio",
+  "category": "audio",
+  "has_audio": false
+ },
+ {
+  "job": "M2_resolution",
+  "category": "resolution",
+  "has_audio": false
+ },
+ {
+  "job": "M3_aspect",
+  "category": "aspect",
+  "has_audio": false
+ },
+ {
+  "job": "M4_camera",
+  "category": "camera",
+  "has_audio": false
+ },
+ {
+  "job": "M5_duration",
+  "category": "duration",
+  "has_audio": false
+ }
+]
