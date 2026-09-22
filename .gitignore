@@ -1,0 +1,10 @@
+connect.sh
+server/
+server/pass.txt
+server/runpod.txt
+server/runpod_A100_1
+server/runpod_A100_1.pub
+server/runpod2.txt
+server/runpod3.txt
+.DS_Store
+token.txt

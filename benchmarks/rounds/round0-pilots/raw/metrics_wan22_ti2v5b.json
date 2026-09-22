@@ -1,0 +1,16 @@
+{
+  "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "host": "RunPod pod, NVIDIA A100 80GB PCIe (driver 570.172.08)",
+  "torch": "2.6.0+cu124",
+  "download_s": 69.0,
+  "load_s": 53.1,
+  "generate_s": 203.9,
+  "peak_vram_gb": 45.5,
+  "width": 1280,
+  "height": 704,
+  "frames": 73,
+  "fps": 24,
+  "steps": 50,
+  "seed": 42,
+  "prompt": "A red fox trotting through fresh snow in a pine forest at sunrise, cinematic, soft golden light"
+}

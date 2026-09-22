@@ -1,0 +1,18 @@
+{
+  "matmul_bf16_tflops": 100,
+  "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "gpu": "NVIDIAA100-SXM4-80GB",
+  "torch": "2.8.0+cu128",
+  "download_s": 120.4,
+  "load_s": 26.0,
+  "generate_s": 186.9,
+  "peak_vram_gb": 45.7,
+  "width": 1280,
+  "height": 704,
+  "frames": 73,
+  "fps": 24,
+  "steps": 50,
+  "prompt": "Aredfoxtrottingthroughfreshsnowinapineforestatsunrise,cinematic,softgoldenlight",
+  "host": "RunPod A100-SXM4-80GB (driver 580.126.16)",
+  "seed": 42
+}

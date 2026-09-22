@@ -1,0 +1,7 @@
+clip,set,prompt_match,artifacts_notes,motion,rank
+S1,strata,partial,a bit weird,,
+S2,strata,pass,clean,,
+S3,strata,fail,that's a camera not film,,
+B1,steps (same prompt and seed),,,same,2
+B2,steps (same prompt and seed),,,same,3
+B3,steps (same prompt and seed),,,more,1
