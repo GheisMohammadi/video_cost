@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Runs ON THE POD: arm the independent guard first, then install deps and run the session.
-# Files expected in /root: pod_guard.sh, wan22_a14b_session.py, hour_test_jobs.json
+# Files expected in /root: pod_guard.sh, wan22_a14b_session.py, and the job list (JOBS_FILE).
 # Logs: /root/out/guard.log, /root/out/session.log, results in /root/out/session/
 # Weights go to /root/hf (local container disk). /workspace can be a slow network FUSE volume.
+JOBS_FILE=${JOBS_FILE:-hour_test_jobs.json}
 mkdir -p /root/out/session /root/hf
 export WAN_CACHE=/root/hf
 rm -f /root/out/SESSION_DONE
@@ -15,7 +16,7 @@ if ! python3 -c "import diffusers, transformers, accelerate, imageio, hf_transfe
   echo "deps failed" > /root/out/SESSION_DONE
   exit 1
 fi
-python3 /root/wan22_a14b_session.py /root/hour_test_jobs.json --out /root/out/session > /root/out/session.log 2>&1
+python3 /root/wan22_a14b_session.py "/root/$JOBS_FILE" --out /root/out/session > /root/out/session.log 2>&1
 code=$?
 echo "runner exit code $code" >> /root/out/session.log
 [ -f /root/out/SESSION_DONE ] || echo "runner exited with $code" > /root/out/SESSION_DONE
