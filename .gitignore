@@ -6,5 +6,6 @@ server/runpod_A100_1
 server/runpod_A100_1.pub
 server/runpod2.txt
 server/runpod3.txt
+server/runpod4.txt
 .DS_Store
 token.txt
