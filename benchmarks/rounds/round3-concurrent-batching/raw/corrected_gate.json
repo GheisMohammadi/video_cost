@@ -1,0 +1,152 @@
+{
+ "G1_A1_short": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 26.35,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": null
+  },
+  "delivered": true
+ },
+ "G2_A1_short": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 24.5,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": 67.75,
+   "all_pairwise_diffs": [
+    67.75
+   ]
+  },
+  "delivered": true
+ },
+ "G2_A2_median": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 44.95,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": 67.75,
+   "all_pairwise_diffs": [
+    67.75
+   ]
+  },
+  "delivered": true
+ },
+ "G3_A1_short": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 29.88,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": 51.73,
+   "all_pairwise_diffs": [
+    67.01,
+    71.28,
+    55.93,
+    69.24,
+    51.73,
+    70.93
+   ]
+  },
+  "delivered": true
+ },
+ "G3_A2_median": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 45.6,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": 51.73,
+   "all_pairwise_diffs": [
+    67.01,
+    71.28,
+    55.93,
+    69.24,
+    51.73,
+    70.93
+   ]
+  },
+  "delivered": true
+ },
+ "G3_A3_long": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 85.89,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": 51.73,
+   "all_pairwise_diffs": [
+    67.01,
+    71.28,
+    55.93,
+    69.24,
+    51.73,
+    70.93
+   ]
+  },
+  "delivered": true
+ },
+ "G3_A4_non_english": {
+  "gate": {
+   "pass": true,
+   "n_frames": 81,
+   "first_last_diff": 70.35,
+   "frames_ok": true,
+   "shape_ok": true,
+   "not_black": true,
+   "not_frozen": true
+  },
+  "distinctness": {
+   "pass": true,
+   "min_pairwise_diff": 51.73,
+   "all_pairwise_diffs": [
+    67.01,
+    71.28,
+    55.93,
+    69.24,
+    51.73,
+    70.93
+   ]
+  },
+  "delivered": true
+ }
+}

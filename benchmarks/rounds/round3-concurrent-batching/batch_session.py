@@ -186,12 +186,24 @@ class Sampler(threading.Thread):
                 "throttle_reasons_seen": hex(mask), "samples": len(r)}
 
 
+def to_uint8_scale(frame):
+    """Batched calls in this pipeline (prompt passed as a list, used for every group including a
+    single-item G1) return frames in 0-1 float range, unlike the 0-255 range returned for a plain
+    string prompt (as used in rounds 1/2). Detect and normalize so thresholds mean the same thing
+    either way, rather than silently comparing against the wrong units."""
+    arr = np.asarray(frame).astype(np.float32)
+    if arr.max() <= 1.5:
+        arr = arr * 255.0
+    return arr
+
+
 def gate_one(frames, common):
     n = len(frames)
     idx = np.linspace(0, n - 1, 9).astype(int)
-    means = [float(frames[i].mean()) for i in idx]
-    diff = float(np.abs(frames[n - 1].astype(np.float32) - frames[0].astype(np.float32)).mean())
-    checks = {"frames_ok": n == common["frames"], "shape_ok": tuple(frames[0].shape[:2]) == (common["height"], common["width"]),
+    scaled = [to_uint8_scale(frames[i]) for i in idx]
+    means = [float(f.mean()) for f in scaled]
+    diff = float(np.abs(to_uint8_scale(frames[n - 1]) - to_uint8_scale(frames[0])).mean())
+    checks = {"frames_ok": n == common["frames"], "shape_ok": tuple(np.asarray(frames[0]).shape[:2]) == (common["height"], common["width"]),
               "not_black": min(means) > 5, "not_frozen": diff > 2.0}
     return {"pass": all(checks.values()), "n_frames": n, "first_last_diff": round(diff, 2), **checks}
 
@@ -201,7 +213,7 @@ def distinctness_check(all_frames):
     n = len(all_frames)
     if n < 2:
         return {"pass": True, "min_pairwise_diff": None}
-    mid = lambda fr: fr[len(fr) // 2].astype(np.float32)
+    mid = lambda fr: to_uint8_scale(fr[len(fr) // 2])
     diffs = [round(float(np.abs(mid(all_frames[i]) - mid(all_frames[j])).mean()), 2)
              for i, j in itertools.combinations(range(n), 2)]
     return {"pass": min(diffs) > 2.0, "min_pairwise_diff": min(diffs), "all_pairwise_diffs": diffs}

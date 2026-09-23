@@ -1,0 +1,17 @@
+{
+ "model": "Wan-AI/Wan2.2-T2V-A14B-Diffusers",
+ "gpu": "NVIDIA A100-SXM4-80GB, 580.126.16, 81920 MiB, 400.00 W, 1410 MHz, Enabled",
+ "load_s": 82.7,
+ "download_s": 450.8,
+ "session_s": 4977.4,
+ "cleared": {
+  "G1": true,
+  "G2": true,
+  "G3": true
+ },
+ "price_snapshot": {
+  "gpu_usd_h": 1.6,
+  "disk_usd_h": 0.028
+ },
+ "scope_note": "batching = one pipe() call with multiple prompts, not independent worker processes or a queueing server"
+}

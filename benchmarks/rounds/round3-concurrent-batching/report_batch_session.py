@@ -21,10 +21,27 @@ rate = (a.gpu_usd_h if a.gpu_usd_h is not None else sess["price_snapshot"]["gpu_
        (a.disk_usd_h if a.disk_usd_h is not None else sess["price_snapshot"]["disk_usd_h"])
 rows = [json.loads(l) for l in (d / "jobs.jsonl").read_text().split("\n") if l.strip()]
 
+corrected_path = d / "corrected_gate.json"
+if corrected_path.exists():
+    corrected = json.loads(corrected_path.read_text())
+    for r in rows:
+        c = corrected.get(r.get("job"))
+        if c:
+            r["gate"], r["distinctness"], r["delivered"] = c["gate"], c["distinctness"], c["delivered"]
+    note_corrected = True
+else:
+    note_corrected = False
+
 out = []
+if note_corrected:
+    P_note = "**Gate and distinctness values below are corrected** (see regate_from_files.py and the round README for why the live in-session values were wrong).\n"
+else:
+    P_note = ""
 P = out.append
 P("# Round 3 report: batching under concurrent load\n")
 P(f"GPU: {sess['gpu']} | rate used: ${rate:.4f}/h | scope: {sess.get('scope_note', '')}\n")
+if P_note:
+    P(P_note)
 
 by_group = {}
 for r in rows:
