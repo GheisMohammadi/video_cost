@@ -1,0 +1,22 @@
+{
+ "C1": {
+  "job": "M4_camera",
+  "category": "camera"
+ },
+ "C2": {
+  "job": "M2_resolution",
+  "category": "resolution"
+ },
+ "C3": {
+  "job": "M1_audio",
+  "category": "audio"
+ },
+ "C4": {
+  "job": "M3_aspect",
+  "category": "aspect"
+ },
+ "C5": {
+  "job": "M5_duration",
+  "category": "duration"
+ }
+}

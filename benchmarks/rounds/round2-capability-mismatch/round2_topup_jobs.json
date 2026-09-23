@@ -1,0 +1,44 @@
+{
+ "version": 1,
+ "note": "Round 2 top-up: only the sixth job (kitchen-sink), skipped in the main session for lack of window time.",
+ "warmup": {
+  "job": "W0_warmup",
+  "block": "warmup",
+  "stratum": "warmup",
+  "prompt_id": "2052390610888233466",
+  "prompt": "🏜️ The Whispers of the Eternal Sands\nThey were told nothing but dunes existed beyond the Dead Ridge. But as the fog lifted, the silent giants emerged. Two wanderers stand before the impossible: twin pyramids, untouched by time, guarding a city that history chose to forget. \"These sands hide more than just stone and dust,\" one whispered. \"The old kings still breathe here.\" The wind carries the echo of a thousand years, waiting for those brave enough to enter... (with sound)",
+  "tokens": 118,
+  "steps": 4,
+  "seed": 1,
+  "expected_s": 100,
+  "width": 832,
+  "height": 480,
+  "frames": 81,
+  "fps": 16,
+  "guidance": 3.5,
+  "guidance_2": 4.0,
+  "shift": 5.0
+ },
+ "jobs": [
+  {
+   "job": "M6_kitchen_sink",
+   "block": "M_mismatch",
+   "stratum": "kitchen_sink",
+   "prompt_id": "2041109818581393888",
+   "prompt": "A lone heroic figure in a sleek dark tactical suit with flowing cape, free-falling dramatically through a chaotic multiverse portal. Shattered reality fragments, glowing neon portals, floating crystalline dimensions, swirling cosmic energy, and parallel worlds rushing past at high speed. Intense dynamic motion, dramatic rim lighting, volumetric god rays, vibrant cosmic colors mixed with deep shadows, epic cinematic composition, cyberpunk-fantasy fusion, highly detailed, photorealistic yet stylized, IMAX 70mm film quality, shot on Arri Alexa, 8K, cinematic color grading, intense motion blur on background elements, slow-motion feel --ar 9:16 --stylize 250 --v 6",
+   "source_url": "https://awesomevideoprompts.com/en/prompts/2041109818581393888-multiverse-hero",
+   "tokens": 175,
+   "steps": 27,
+   "seed": 5105,
+   "expected_s": 575,
+   "width": 832,
+   "height": 480,
+   "frames": 81,
+   "fps": 16,
+   "guidance": 3.5,
+   "guidance_2": 4.0,
+   "shift": 5.0
+  }
+ ],
+ "expected_total_s": 575
+}
