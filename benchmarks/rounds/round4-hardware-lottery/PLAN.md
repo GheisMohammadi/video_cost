@@ -25,14 +25,15 @@ The two rentals landed within 0.5% of each other's speed and showed the identica
 Reuses round 1's exact, unmodified, already-committed job list (`benchmarks/prompts/hour_test_jobs.json`, sha256 `b19fd5f5902a13ebba3207dc3e2455e72ac817441600e79efe0ac736323db21d`) and its exact, already-proven session runner, guard, and orchestrator (`wan22_a14b_session.py`, `pod_guard.sh`, `run_hour_session.sh`), unchanged except for one small, additive fix (section 5). No new prompt selection and no new generation code -- the only new work this round is running that same, already-verified procedure on two pods instead of one, and comparing the results.
 
 Procedure:
-1. Rent a fresh A100-SXM4-80GB pod ("pod A"), run the full existing job list on it (warm-up, then A1-A4 at 27 steps, then B1/B2 at 20/15 steps on the median prompt), copy and verify results, stop the pod.
-2. Rent a second fresh A100-SXM4-80GB pod ("pod B"), same procedure.
-3. Run `compare_pods.py` locally on the two results, which reports:
+1. Rent two fresh A100-SXM4-80GB pods at the same time ("pod A" and "pod B"), each in its own `server/runpodN.txt` notes file.
+2. Run the full existing job list (warm-up, then A1-A4 at 27 steps, then B1/B2 at 20/15 steps on the median prompt) on both pods concurrently, each targeted independently via `connect.sh`'s existing `POD_NOTES` override (already used throughout this project to address a specific pod's notes file; no tooling change needed to run two at once). Each pod has its own independent preflight, guard, and go/no-go checks, exactly as a solo session would.
+3. Copy and verify both pods' results, stop both pods.
+4. Run `compare_pods.py` locally on the two results, which reports:
    - Whether the two pods' GPU UUIDs prove they are physically different units.
    - Generate time, GPU clock, throttle reason, and peak VRAM for each of the 6 shared jobs, pod A vs pod B, and the mean speed difference across them.
    - For the four prompts sharing a seed and step count across both pods (A1-A4, all at 27 steps): whether the two pods' output files are byte-identical, whether the decoded frames are byte-identical, and if not, the mean pixel difference -- checked against the scale round 3 established for what "genuinely different content" looks like (roughly 50 and above), so a small drift and an actual mismatch are not confused with each other.
 
-Pods are rented sequentially (one full session, then the next), matching every prior round's practice, not simultaneously. This means the two sessions do not happen at the exact same time, which is a real limitation (see section 7): a fair comparison of "the same instance type" still leaves open whether the day or hour of rental affects fleet-wide contention, something this design cannot separate from a true per-unit hardware difference.
+Pods are rented and run simultaneously, not sequentially as every prior round has done. This removes the time-of-day and fleet-load confound a sequential design would have left open: both pods experience the same moment in RunPod's fleet, so a speed difference between them is more clearly attributable to which instance was assigned rather than to when each was rented. If one pod fails preflight while the other does not, that pod is stopped and restarted on its own, sequenced after the other -- simultaneity is a design choice for the common case, not a hard requirement enforced against a real failure.
 
 ## 4. Reproducibility: what result would mean what
 
@@ -47,18 +48,18 @@ Stated before running, so the interpretation is not adjusted after seeing the an
 
 ## 6. Budget
 
-| Item | Per pod | Both pods |
+| Item | Per pod | Both pods (run concurrently) |
 |---|---|---|
-| Setup, preflight, download | ~15 min | ~30 min |
-| Warm-up + 6 measured jobs (same as round 1) | ~53 min | ~106 min |
-| Copy results | ~3 min | ~6 min |
-| **Total** | **~71 min, about $1.92** | **~142 min, about $3.84** |
+| Setup, preflight, download | ~15 min | ~15 min wall time (parallel), $0.80 combined GPU cost |
+| Warm-up + 6 measured jobs (same as round 1) | ~53 min | ~53 min wall time (parallel), $2.86 combined GPU cost |
+| Copy results | ~3 min | ~3 min wall time (parallel), $0.16 combined GPU cost |
+| **Total** | **~71 min, about $1.92** | **~71 min wall time, about $3.84 combined cost** |
 
-Session cap: **$5.00** total across both pods, matching List6's original combined estimate for items 1-2 ($3-5). Each pod uses the same guard and go/no-go rules already proven in round 1 (preflight abort on a bad GPU, pause if the first job runs far over estimate).
+Running concurrently does not change the total dollar cost (same GPU-seconds billed either way), only the wall-clock time it takes -- about 71 minutes instead of about 142. Session cap: **$5.00** total across both pods, matching List6's original combined estimate for items 1-2 ($3-5). Each pod uses the same guard and go/no-go rules already proven in round 1 (preflight abort on a bad GPU, pause if the first job runs far over estimate), independently of the other pod.
 
 ## 7. Limitations
 
-1. **Sequential, not simultaneous rentals.** The two pods are not compared at the same moment in time, so fleet-wide contention effects (time of day, day of week) are not separated from genuine per-unit hardware variance. A true controlled experiment would rent both at once; this round does not, matching every prior round's one-pod-at-a-time practice and keeping cost predictable.
+1. **Two pods rented at once, but still only two.** Running simultaneously removes the time-of-day confound a sequential design would have left open, but a shared, unusual fleet-wide event affecting both pods at that same moment (for example, unrelated regional load) could still coincide with the whole test, same as it could for any single measurement in this project.
 2. **Two samples.** This establishes whether two rentals differ, not a distribution of how much rentals typically differ. A finding here (for example, both throttled identically) is suggestive of a fleet-wide pattern, not proof of one.
 3. **Reproducibility is checked only within this pipeline's specific settings** (bf16, CPU offload, this diffusers version) -- it does not generalize to other precision or optimization settings.
 4. **RunPod cannot be asked for a specific physical unit.** "The lottery" here means two independent requests for the same instance type, whatever RunPod's scheduler assigns -- consistent with how this project has always rented pods, and with what a real user of this GPU tier would experience.
