@@ -63,6 +63,7 @@ pre = {
     "utc": time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()),
     "container_uptime_s": int(sh("ps -o etimes= -p 1") or 0),
     "gpu": sh("nvidia-smi --query-gpu=name,driver_version,memory.total,power.limit,clocks.max.sm,persistence_mode --format=csv,noheader"),
+    "gpu_uuid": sh("nvidia-smi --query-gpu=uuid --format=csv,noheader"),  # only reliable way to tell if two rentals landed on the same physical unit
     "versions": {"torch": torch.__version__, "diffusers": diffusers.__version__, "python": sys.version.split()[0]},
     "host": {"loadavg": sh("cat /proc/loadavg"), "nproc": sh("nproc"), "mem": sh("free -g | awk '/Mem/{print $2\"G total \"$7\"G avail\"}'")},
     "fails": [],
