@@ -1,0 +1,52 @@
+{
+ "clips": [
+  {
+   "name": "480p_A1_short",
+   "path": "/root/inputs_480p/A1_short.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "480p_A2_median",
+   "path": "/root/inputs_480p/A2_median.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "480p_A3_long",
+   "path": "/root/inputs_480p/A3_long.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "480p_A4_non_english",
+   "path": "/root/inputs_480p/A4_non_english.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "720p_A1_short",
+   "path": "/root/round6_out/A1_short.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "720p_A2_median",
+   "path": "/root/round6_out/A2_median.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "720p_A3_long",
+   "path": "/root/round6_out/A3_long.mp4",
+   "fps": 16,
+   "frames": 81
+  },
+  {
+   "name": "720p_A4_non_english",
+   "path": "/root/round6_out/A4_non_english.mp4",
+   "fps": 16,
+   "frames": 81
+  }
+ ]
+}
