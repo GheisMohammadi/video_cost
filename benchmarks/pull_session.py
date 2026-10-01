@@ -38,22 +38,33 @@ def tagged(out):
     """Return {tag: value} from lines like TAG:value (ignores the echoed command lines)."""
     res = {}
     for line in out.split("\n"):
-        m = re.search(r"(?:^|[^A-Za-z0-9_])((?:LS|DONE|JL|F_[a-z]+|B_[A-Za-z0-9_]+|M_[A-Za-z0-9_]+)):(\S*)\s*$", line)
+        m = re.search(r"(?:^|[^A-Za-z0-9_])((?:LS|DONE|JL|F_[a-z]+|L_[a-z]+|B_[A-Za-z0-9_]+|M_[A-Za-z0-9_]+)):(\S*)\s*$", line)
         if m and not m.group(2).startswith("$("):
             res[m.group(1)] = m.group(2)
     return res
 
 
 def poll(dest, stop_when_done, remote=REMOTE, done_marker="/root/out/SESSION_DONE"):
+    out_dir = str(Path(done_marker).parent)  # guard.log/session.log/pip.log live beside the marker, one level above `remote`
     out = tagged(ssh(
         f'cd {remote}; echo "LS:$(ls *.mp4 2>/dev/null | tr \'\\n\' \',\')"; '
         f'echo "DONE:$([ -f {done_marker} ] && echo yes || echo no)"; '
         f'echo "JL:$(base64 -w0 jobs.jsonl 2>/dev/null)"; '
-        f'for f in preflight session; do echo "F_$f:$(base64 -w0 $f.json 2>/dev/null)"; done'))
+        f'for f in preflight session; do echo "F_$f:$(base64 -w0 $f.json 2>/dev/null)"; done; '
+        f'for f in guard session pip; do echo "L_$f:$(base64 -w0 {out_dir}/$f.log 2>/dev/null)"; done'))
     if "DONE" not in out:
         print("poll failed (no answer)", flush=True)
         return False, False
     dest.mkdir(parents=True, exist_ok=True)
+    # Text logs, pulled best-effort every poll (not just at the end): if the pod dies before
+    # finishing, the last successfully-pulled copy is still on disk for diagnosis, rather than
+    # being lost with the container (round 6 found this gap the hard way).
+    logs_dir = dest / "pod_logs"
+    for name in ("guard", "session", "pip"):
+        v = out.get(f"L_{name}")
+        if v:
+            logs_dir.mkdir(exist_ok=True)
+            (logs_dir / f"{name}.log").write_bytes(base64.b64decode(v))
     jl = base64.b64decode(out.get("JL", "")).decode() if out.get("JL") else ""
     if jl:
         (dest / "jobs.jsonl").write_text(jl)
