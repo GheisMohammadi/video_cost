@@ -1,0 +1,91 @@
+Fetching 49 files:   0%|          | 0/49 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 49 files:   2%|▏         | 1/49 [00:00<00:06,  6.88it/s]Fetching 49 files:  24%|██▍       | 12/49 [00:00<00:02, 17.64it/s]Fetching 49 files:  31%|███       | 15/49 [00:20<00:01, 17.64it/s]Fetching 49 files:  33%|███▎      | 16/49 [00:35<01:35,  2.90s/it]Fetching 49 files:  35%|███▍      | 17/49 [00:45<01:55,  3.60s/it]Fetching 49 files:  39%|███▉      | 19/49 [00:45<01:23,  2.79s/it]Fetching 49 files:  41%|████      | 20/49 [01:09<02:47,  5.78s/it]Fetching 49 files:  43%|████▎     | 21/49 [01:28<03:46,  8.09s/it]Fetching 49 files:  45%|████▍     | 22/49 [01:54<05:10, 11.51s/it]Fetching 49 files:  47%|████▋     | 23/49 [01:57<04:13,  9.74s/it]Fetching 49 files:  49%|████▉     | 24/49 [02:12<04:31, 10.87s/it]Fetching 49 files:  51%|█████     | 25/49 [02:28<04:55, 12.31s/it]Fetching 49 files:  53%|█████▎    | 26/49 [02:31<03:42,  9.68s/it]Fetching 49 files:  55%|█████▌    | 27/49 [02:33<02:45,  7.52s/it]Fetching 49 files:  57%|█████▋    | 28/49 [02:39<02:33,  7.32s/it]Fetching 49 files:  59%|█████▉    | 29/49 [03:16<05:12, 15.63s/it]Fetching 49 files:  61%|██████    | 30/49 [03:55<07:07, 22.52s/it]Fetching 49 files:  63%|██████▎   | 31/49 [04:01<05:19, 17.73s/it]Fetching 49 files:  67%|██████▋   | 33/49 [04:01<02:34,  9.67s/it]Fetching 49 files:  69%|██████▉   | 34/49 [04:33<03:44, 14.97s/it]Fetching 49 files:  71%|███████▏  | 35/49 [04:36<02:45, 11.84s/it]Fetching 49 files:  73%|███████▎  | 36/49 [04:36<01:52,  8.69s/it]Fetching 49 files:  76%|███████▌  | 37/49 [04:57<02:24, 12.08s/it]Fetching 49 files:  78%|███████▊  | 38/49 [05:08<02:11, 11.93s/it]Fetching 49 files:  80%|███████▉  | 39/49 [05:22<02:03, 12.37s/it]Fetching 49 files:  82%|████████▏ | 40/49 [06:01<03:03, 20.40s/it]Fetching 49 files:  84%|████████▎ | 41/49 [06:10<02:15, 16.95s/it]Fetching 49 files:  86%|████████▌ | 42/49 [06:34<02:13, 19.04s/it]Fetching 49 files:  88%|████████▊ | 43/49 [06:47<01:42, 17.11s/it]Fetching 49 files:  90%|████████▉ | 44/49 [07:29<02:03, 24.65s/it]Fetching 49 files:  92%|█████████▏| 45/49 [07:31<01:10, 17.75s/it]Fetching 49 files:  94%|█████████▍| 46/49 [07:31<00:37, 12.54s/it]Fetching 49 files:  96%|█████████▌| 47/49 [07:31<00:17,  8.94s/it]Fetching 49 files:  98%|█████████▊| 48/49 [07:32<00:06,  6.53s/it]Fetching 49 files: 100%|██████████| 49/49 [07:33<00:00,  4.71s/it]Fetching 49 files: 100%|██████████| 49/49 [07:33<00:00,  9.25s/it]
+PREFLIGHT_OK {"utc": "2026-10-01 01:26:26", "container_uptime_s": 593, "gpu": "NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB, 400.00 W, 1410 MHz, Enabled", "gpu_uuid": "GPU-155a8c86-27b7-4993-a2a1-55f018c98964", "versions": {"torch": "2.8.0+cu128", "diffusers": "0.40.0", "python": "3.12.3"}, "host": {"loadavg": "9.49 17.24 15.22 8/9657 772", "nproc": "128", "mem": "2015G total 1877G avail"}, "fails": [], "matmul_bf16_tflops": 243, "vram_total_gb": 85.1, "cache_fstype": "overlay", "weights": "downloading", "download_s": 453.5, "disk_free_gb": 88.2}
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:04<00:50,  4.60s/it][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:10<00:51,  5.13s/it][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:14<00:41,  4.62s/it][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:17<00:34,  4.32s/it][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:22<00:29,  4.26s/it][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:26<00:25,  4.24s/it][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:31<00:21,  4.39s/it][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:35<00:18,  4.52s/it][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:40<00:13,  4.51s/it][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:44<00:08,  4.42s/it][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:48<00:04,  4.23s/it][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:50<00:00,  3.67s/it][ALoading checkpoint shards: 100%|██████████| 12/12 [00:50<00:00,  4.23s/it]
+Loading pipeline components...:  17%|█▋        | 1/6 [00:53<04:26, 53.22s/it]Loading pipeline components...:  33%|███▎      | 2/6 [00:54<01:30, 22.68s/it]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 242/242 [00:00<00:00, 3621.42it/s]
+Loading pipeline components...:  50%|█████     | 3/6 [00:54<00:37, 12.42s/it]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:03<00:36,  3.32s/it][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:07<00:35,  3.59s/it][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:10<00:32,  3.64s/it][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:14<00:29,  3.67s/it][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:18<00:26,  3.75s/it][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:22<00:22,  3.74s/it][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:25<00:18,  3.75s/it][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:29<00:14,  3.74s/it][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:33<00:11,  3.73s/it][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:37<00:07,  3.75s/it][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:40<00:03,  3.73s/it][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:43<00:00,  3.33s/it][ALoading checkpoint shards: 100%|██████████| 12/12 [00:43<00:00,  3.60s/it]
+Loading pipeline components...:  67%|██████▋   | 4/6 [01:40<00:50, 25.47s/it]Loading pipeline components...: 100%|██████████| 6/6 [01:40<00:00, 16.71s/it]
+loaded 100.6
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [01:34<04:42, 94.30s/it] 50%|█████     | 2/4 [02:43<02:39, 79.62s/it] 75%|███████▌  | 3/4 [04:17<01:26, 86.10s/it]100%|██████████| 4/4 [05:26<00:00, 79.41s/it]100%|██████████| 4/4 [05:26<00:00, 81.65s/it]
+JOB {"job": "W0_warmup", "ok": true, "delivered": true, "generate_s": 359.7, "encode_s": 2.5, "gpu_util_mean": 81.9, "throttle_reasons_seen": "0x4"}
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [01:19<34:15, 79.04s/it]  7%|▋         | 2/27 [02:28<30:32, 73.32s/it] 11%|█         | 3/27 [03:37<28:34, 71.45s/it] 15%|█▍        | 4/27 [04:46<27:02, 70.54s/it] 19%|█▊        | 5/27 [05:55<25:41, 70.08s/it] 22%|██▏       | 6/27 [07:05<24:25, 69.79s/it] 26%|██▌       | 7/27 [08:14<23:11, 69.60s/it] 30%|██▉       | 8/27 [09:23<21:59, 69.47s/it] 33%|███▎      | 9/27 [10:32<20:48, 69.38s/it] 37%|███▋      | 10/27 [11:41<19:38, 69.33s/it] 41%|████      | 11/27 [12:51<18:28, 69.29s/it] 44%|████▍     | 12/27 [14:00<17:18, 69.26s/it] 48%|████▊     | 13/27 [15:29<17:33, 75.23s/it] 52%|█████▏    | 14/27 [16:38<15:53, 73.38s/it] 56%|█████▌    | 15/27 [17:47<14:24, 72.08s/it] 59%|█████▉    | 16/27 [18:56<13:02, 71.17s/it] 63%|██████▎   | 17/27 [20:05<11:45, 70.53s/it] 67%|██████▋   | 18/27 [21:14<10:30, 70.10s/it] 70%|███████   | 19/27 [22:23<09:18, 69.79s/it] 74%|███████▍  | 20/27 [23:32<08:06, 69.57s/it] 78%|███████▊  | 21/27 [24:41<06:56, 69.42s/it] 81%|████████▏ | 22/27 [25:51<05:46, 69.33s/it] 85%|████████▌ | 23/27 [27:00<04:37, 69.25s/it] 89%|████████▉ | 24/27 [28:09<03:27, 69.20s/it] 93%|█████████▎| 25/27 [29:18<02:18, 69.15s/it] 96%|█████████▋| 26/27 [30:27<01:09, 69.11s/it]100%|██████████| 27/27 [31:36<00:00, 69.07s/it]100%|██████████| 27/27 [31:36<00:00, 70.23s/it]
+JOB {"job": "A2_median", "ok": true, "delivered": true, "generate_s": 1924.7, "encode_s": 2.6, "gpu_util_mean": 97.9, "throttle_reasons_seen": "0x4"}
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [01:22<35:40, 82.34s/it]  7%|▋         | 2/27 [02:31<31:05, 74.61s/it] 11%|█         | 3/27 [03:40<28:51, 72.15s/it] 15%|█▍        | 4/27 [04:49<27:12, 70.99s/it] 19%|█▊        | 5/27 [05:59<25:48, 70.38s/it] 22%|██▏       | 6/27 [07:08<24:29, 69.99s/it] 26%|██▌       | 7/27 [08:17<23:14, 69.73s/it] 30%|██▉       | 8/27 [09:26<22:01, 69.56s/it] 33%|███▎      | 9/27 [10:36<20:50, 69.44s/it] 37%|███▋      | 10/27 [11:45<19:39, 69.37s/it] 41%|████      | 11/27 [12:54<18:28, 69.31s/it] 44%|████▍     | 12/27 [14:03<17:19, 69.28s/it] 48%|████▊     | 13/27 [15:32<17:33, 75.26s/it] 52%|█████▏    | 14/27 [16:41<15:54, 73.41s/it] 56%|█████▌    | 15/27 [17:50<14:25, 72.11s/it] 59%|█████▉    | 16/27 [19:00<13:03, 71.21s/it] 63%|██████▎   | 17/27 [20:09<11:45, 70.59s/it] 67%|██████▋   | 18/27 [21:18<10:31, 70.15s/it] 70%|███████   | 19/27 [22:27<09:18, 69.84s/it] 74%|███████▍  | 20/27 [23:36<08:07, 69.62s/it] 78%|███████▊  | 21/27 [24:45<06:56, 69.46s/it] 81%|████████▏ | 22/27 [25:54<05:46, 69.35s/it] 85%|████████▌ | 23/27 [27:03<04:37, 69.27s/it] 89%|████████▉ | 24/27 [28:12<03:27, 69.22s/it] 93%|█████████▎| 25/27 [29:22<02:18, 69.20s/it]WATCHDOG_EXIT
+runner exit code 3
+nohup: ignoring input
+PREFLIGHT_OK {"utc": "2026-10-01 02:54:11", "container_uptime_s": 5857, "gpu": "NVIDIA A100-SXM4-80GB, 580.159.04, 81920 MiB, 400.00 W, 1410 MHz, Enabled", "gpu_uuid": "GPU-155a8c86-27b7-4993-a2a1-55f018c98964", "versions": {"torch": "2.8.0+cu128", "diffusers": "0.40.0", "python": "3.12.3"}, "host": {"loadavg": "11.20 12.24 14.67 9/9790 18204", "nproc": "128", "mem": "2015G total 1879G avail"}, "fails": [], "matmul_bf16_tflops": 243, "vram_total_gb": 85.1, "cache_fstype": "overlay", "weights": "present", "download_s": 0, "disk_free_gb": 88.2}
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/usr/local/lib/python3.12/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:03<00:43,  3.91s/it][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:07<00:36,  3.67s/it][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:11<00:33,  3.78s/it][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:15<00:29,  3.74s/it][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:19<00:26,  3.84s/it][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:22<00:22,  3.83s/it][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:26<00:19,  3.81s/it][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:30<00:14,  3.68s/it][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:33<00:10,  3.66s/it][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:37<00:07,  3.73s/it][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:41<00:03,  3.78s/it][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:43<00:00,  3.36s/it][ALoading checkpoint shards: 100%|██████████| 12/12 [00:43<00:00,  3.65s/it]
+Loading pipeline components...:  33%|███▎      | 2/6 [00:46<01:32, 23.17s/it]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:03<00:39,  3.61s/it][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:07<00:38,  3.84s/it][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:11<00:34,  3.87s/it][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:15<00:31,  3.88s/it][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:19<00:27,  3.92s/it][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:23<00:23,  3.95s/it][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:27<00:20,  4.03s/it][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:31<00:16,  4.05s/it][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:35<00:12,  4.07s/it][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:39<00:08,  4.08s/it][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:43<00:04,  4.05s/it][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:46<00:00,  3.64s/it][ALoading checkpoint shards: 100%|██████████| 12/12 [00:46<00:00,  3.88s/it]
+Loading pipeline components...:  50%|█████     | 3/6 [01:35<01:41, 33.85s/it]Loading pipeline components...:  83%|████████▎ | 5/6 [01:36<00:15, 15.85s/it]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 242/242 [00:00<00:00, 6436.86it/s]
+Loading pipeline components...: 100%|██████████| 6/6 [01:36<00:00, 11.47s/it]Loading pipeline components...: 100%|██████████| 6/6 [01:36<00:00, 16.13s/it]
+loaded 97.1
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [01:28<04:24, 88.15s/it] 50%|█████     | 2/4 [02:37<02:34, 77.05s/it] 75%|███████▌  | 3/4 [04:11<01:24, 84.80s/it]100%|██████████| 4/4 [05:20<00:00, 78.62s/it]100%|██████████| 4/4 [05:20<00:00, 80.15s/it]
+JOB {"job": "W0_warmup", "ok": true, "delivered": true, "generate_s": 346.9, "encode_s": 2.5, "gpu_util_mean": 84.9, "throttle_reasons_seen": "0x4"}
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [01:22<35:53, 82.84s/it]  7%|▋         | 2/27 [02:32<31:10, 74.82s/it] 11%|█         | 3/27 [03:41<28:54, 72.29s/it] 15%|█▍        | 4/27 [04:50<27:14, 71.08s/it] 19%|█▊        | 5/27 [05:59<25:48, 70.40s/it] 22%|██▏       | 6/27 [07:08<24:29, 69.99s/it] 26%|██▌       | 7/27 [08:18<23:14, 69.73s/it] 30%|██▉       | 8/27 [09:27<22:02, 69.58s/it] 33%|███▎      | 9/27 [10:36<20:50, 69.48s/it] 37%|███▋      | 10/27 [11:45<19:39, 69.41s/it] 41%|████      | 11/27 [12:55<18:29, 69.35s/it] 44%|████▍     | 12/27 [14:04<17:19, 69.30s/it] 48%|████▊     | 13/27 [15:43<18:18, 78.45s/it] 52%|█████▏    | 14/27 [16:52<16:23, 75.62s/it] 56%|█████▌    | 15/27 [18:02<14:43, 73.66s/it] 59%|█████▉    | 16/27 [19:11<13:15, 72.30s/it] 63%|██████▎   | 17/27 [20:20<11:53, 71.34s/it] 67%|██████▋   | 18/27 [21:29<10:36, 70.68s/it] 70%|███████   | 19/27 [22:38<09:21, 70.22s/it] 74%|███████▍  | 20/27 [23:47<08:09, 69.89s/it] 78%|███████▊  | 21/27 [24:56<06:57, 69.66s/it] 81%|████████▏ | 22/27 [26:05<05:47, 69.52s/it] 85%|████████▌ | 23/27 [27:15<04:37, 69.42s/it] 89%|████████▉ | 24/27 [28:24<03:28, 69.35s/it] 93%|█████████▎| 25/27 [29:33<02:18, 69.29s/it] 96%|█████████▋| 26/27 [30:42<01:09, 69.25s/it]100%|██████████| 27/27 [31:51<00:00, 69.21s/it]100%|██████████| 27/27 [31:51<00:00, 70.81s/it]
+JOB {"job": "A3_long", "ok": true, "delivered": true, "generate_s": 1940.6, "encode_s": 4.2, "gpu_util_mean": 97.1, "throttle_reasons_seen": "0x4"}
+  0%|          | 0/27 [00:00<?, ?it/s]  4%|▎         | 1/27 [01:34<40:47, 94.15s/it]  7%|▋         | 2/27 [02:43<33:09, 79.58s/it] 11%|█         | 3/27 [03:52<29:57, 74.92s/it] 15%|█▍        | 4/27 [05:02<27:52, 72.72s/it] 19%|█▊        | 5/27 [06:11<26:13, 71.51s/it] 22%|██▏       | 6/27 [07:20<24:46, 70.76s/it] 26%|██▌       | 7/27 [08:30<23:25, 70.29s/it] 30%|██▉       | 8/27 [09:39<22:09, 69.98s/it] 33%|███▎      | 9/27 [10:48<20:55, 69.76s/it] 37%|███▋      | 10/27 [11:58<19:43, 69.62s/it] 41%|████      | 11/27 [13:07<18:32, 69.51s/it] 44%|████▍     | 12/27 [14:16<17:21, 69.44s/it] 48%|████▊     | 13/27 [15:58<18:27, 79.11s/it] 52%|█████▏    | 14/27 [17:07<16:29, 76.10s/it] 56%|█████▌    | 15/27 [18:16<14:48, 74.01s/it] 59%|█████▉    | 16/27 [19:25<13:17, 72.54s/it] 63%|██████▎   | 17/27 [20:34<11:55, 71.51s/it] 67%|██████▋   | 18/27 [21:43<10:37, 70.79s/it] 70%|███████   | 19/27 [22:52<09:22, 70.29s/it] 74%|███████▍  | 20/27 [24:01<08:09, 69.95s/it] 78%|███████▊  | 21/27 [25:11<06:58, 69.70s/it] 81%|████████▏ | 22/27 [26:20<05:47, 69.54s/it] 85%|████████▌ | 23/27 [27:29<04:37, 69.41s/it] 89%|████████▉ | 24/27 [28:38<03:27, 69.32s/it] 93%|█████████▎| 25/27 [29:47<02:18, 69.26s/it] 96%|█████████▋| 26/27 [30:56<01:09, 69.21s/it]100%|██████████| 27/27 [32:05<00:00, 69.17s/it]100%|██████████| 27/27 [32:05<00:00, 71.33s/it]
+JOB {"job": "A4_non_english", "ok": true, "delivered": true, "generate_s": 1954.5, "encode_s": 3.0, "gpu_util_mean": 96.4, "throttle_reasons_seen": "0x4"}
+  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [01:20<25:38, 80.99s/it] 10%|█         | 2/20 [02:30<22:14, 74.14s/it] 15%|█▌        | 3/20 [03:39<20:22, 71.94s/it] 20%|██        | 4/20 [04:48<18:54, 70.90s/it] 25%|██▌       | 5/20 [05:58<17:34, 70.32s/it] 30%|███       | 6/20 [07:07<16:19, 69.97s/it] 35%|███▌      | 7/20 [08:16<15:06, 69.75s/it] 40%|████      | 8/20 [09:26<13:55, 69.60s/it] 45%|████▌     | 9/20 [10:35<12:44, 69.50s/it] 50%|█████     | 10/20 [12:16<13:13, 79.39s/it] 55%|█████▌    | 11/20 [13:26<11:26, 76.26s/it] 60%|██████    | 12/20 [14:35<09:52, 74.10s/it] 65%|██████▌   | 13/20 [15:44<08:28, 72.61s/it] 70%|███████   | 14/20 [16:53<07:09, 71.57s/it] 75%|███████▌  | 15/20 [18:02<05:54, 70.84s/it] 80%|████████  | 16/20 [19:11<04:41, 70.32s/it] 85%|████████▌ | 17/20 [20:21<03:29, 69.97s/it] 90%|█████████ | 18/20 [21:30<02:19, 69.71s/it]

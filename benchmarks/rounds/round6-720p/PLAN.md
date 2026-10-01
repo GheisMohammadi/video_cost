@@ -1,6 +1,6 @@
 # Round 6 test design: proper 720p, same rigor as round 1's 480p
 
-Status: scripts written and tested against synthetic data where GPU-independent; not yet run. This is List6 item 6. Frozen before running.
+Status: run partially complete. The A-strata block (A1-A4) finished, was verified, and is written up in `README.md`. The step-count ladder (B1, B2) was not reached; see `README.md`, sections 5 and 7. This is List6 item 6.
 
 ## 1. Question
 
