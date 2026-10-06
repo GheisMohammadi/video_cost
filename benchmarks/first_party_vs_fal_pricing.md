@@ -42,25 +42,26 @@ Direction of the price difference is model-specific: confirmed cheaper first-par
 |---|---|---|
 | Wan 2.2 | Apache 2.0, no revenue threshold, no gating | No licensing blocker; this is why rounds 1-6 could run on a rented GPU directly |
 | LTX-2.3 | LTX-2 license (free under $10M org revenue, commercial license required above) plus a gated text-encoder dependency (Gemma 3 12B IT, manual HF approval) | Two separate blockers. Round 7 is blocked on the gated dependency alone, independent of the revenue threshold |
+| Wan 2.2 via Alibaba Model Studio (API path, separate from the Apache-licensed weights above) | Alibaba's Model Studio terms (checked against the version dated 2026-09-28): commercial use of API-generated output is allowed, and Alibaba assigns its rights in that output to the caller. Reselling the API or model access itself is prohibited without separate authorization. Third-party models hosted within Model Studio can carry their own additional terms, checked separately per model | Generating video through the API and selling that video (or a product built on it) appears permitted. Repackaging and reselling the API access itself is not |
 | Seedance | No weights exist to license; access is contractual only | Reselling output at a markup, if permitted at all, is a terms-of-service question, not a licensing one. Not yet checked: whether ByteDance's API terms permit reselling output purchased through its API |
 | Veo 3.1, MiniMax, Hailuo | Same as Seedance: API-only, resale governed by terms of service, not yet checked | Same open question applies |
 
 ## 4. Effect on the project's $1M profit formula
 
-The formula (root `README.md`): $1,000,000 spent on capacity, output sold at fal's price, minus the $1,000,000. Applied to self-hosting Wan 2.2, the result is negative (rounds 1, 6). Applied to reselling Alibaba's first-party Wan 2.2 API access instead, using the figure in section 2 (medium confidence, unconfirmed on Alibaba's own console):
+The formula (root `README.md`): $1,000,000 spent on capacity, output sold at fal's price, minus the $1,000,000. Applied to self-hosting Wan 2.2, the result is negative (rounds 1, 6). Applied instead to buying Alibaba's first-party Wan 2.2 API access, generating video, and selling that video -- the path section 3 finds permitted, not reselling the API access itself -- using the figure in section 2 (medium confidence, unconfirmed on Alibaba's own console):
 
 $1,000,000 at $0.02/s buys 50,000,000 seconds of output. Sold at fal's $0.04/s: $2,000,000 revenue, **$1,000,000 profit**.
 
-This figure depends on three unconfirmed points:
+This figure depends on three points, one of them now checked:
 
 1. The $0.02/s rate has not been confirmed on Alibaba's own console, only on third-party pages quoting it.
-2. Whether Alibaba's terms permit reselling API output at a markup is unchecked.
+2. Checked: Alibaba's Model Studio terms (section 3) permit generating video through the API and selling that video or a product built on it. They do not permit reselling the API or model access itself -- so the business built on this number would need to be "sell generated video," not "resell Alibaba's API at a markup." Third-party models within Model Studio can carry separate terms, not yet checked individually.
 3. The figure assumes $2,000,000 of buyer demand exists at fal's price -- the same 100%-utilization assumption the formula requires elsewhere, applied here to demand rather than GPU uptime.
 
 ## 5. Open items, in order
 
 1. Confirm the Alibaba Wan 2.2 rate against Alibaba's own console, not a third-party page.
-2. Find Alibaba's and ByteDance's terms of service and check whether reselling API output at a markup is permitted.
+2. Checked for Alibaba (section 3): selling generated video is permitted, reselling API access is not. Still open for ByteDance: find its terms of service and check whether reselling output generated through its API is permitted.
 3. If both check out: a small real purchase of API access, to confirm price and output quality, before any larger commitment.
 
 No GPU or pod is needed for any of these three items.
