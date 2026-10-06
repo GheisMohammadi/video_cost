@@ -21,6 +21,8 @@ All of these assume you can reach the pod via `../connect.sh` (see the project r
 ## Other files here
 
 - `fal_wan22_config.md` — fal.ai's exact request defaults for Wan 2.2 A14B (resolution, steps, guidance, frame interpolation, price), pulled from their API schema. Rounds that claim to "match fal" should match every field listed here.
+- `wan22_hosted_pricing_survey.md` — how fal's Wan 2.2 A14B price compares to other hosted APIs serving the same model.
+- `first_party_vs_fal_pricing.md` — whether buying API access straight from a model's own maker (Alibaba, ByteDance, Lightricks, Google, MiniMax) is cheaper than buying the same access through fal. A separate question from self-hosting on a rented GPU.
 - `legacy/` — earlier, superseded scripts (used for round 0, or never used). See [`legacy/README.md`](legacy/README.md).
 
 ## What's committed, what isn't
