@@ -2,7 +2,7 @@
 
 # Round 8 test design: a 4-step distillation LoRA on Wan 2.2
 
-Status: the loading checkpoint in section 3 has passed, confirmed locally without a GPU or pod. The remaining unknowns (which component each LoRA file attaches to, the exact 4-step noise schedule, and the guidance scale) need an actual generation, which needs a pod. Nothing generated yet.
+Status: run complete for the cost question this round asked. Results, what happened across two pods, and limitations are in `README.md`. Headline: $0.0097/video-second, 4.1x cheaper than fal, versus round 1's plain-model result of 1.33x more expensive than fal.
 
 ## 1. Question
 

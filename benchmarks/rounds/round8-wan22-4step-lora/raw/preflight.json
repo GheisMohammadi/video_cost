@@ -1,0 +1,18 @@
+{
+ "note": "Two pods were used: the first (GPU-a638261b-cc3f-8493-3ba0-59ef81474ae3) ran the smoke test and A1_short, then died before a full preflight.json was pulled back; the second (this record) ran A2-A4.",
+ "utc": "2026-10-07 22:10:58",
+ "gpu": "NVIDIA A100-SXM4-80GB, 580.126.16, 81920 MiB, 400.00 W, 1410 MHz",
+ "gpu_uuid": "GPU-ec6f1d03-56f4-d578-ec12-faf36798cf14",
+ "versions": {
+  "torch": "2.8.0+cu128",
+  "diffusers": "0.41.0",
+  "python": "3.12.3"
+ },
+ "fails": [],
+ "matmul_bf16_tflops": 242,
+ "vram_total_gb": 85.1,
+ "cache_fstype": "overlay",
+ "weights": "present",
+ "download_s": 0,
+ "first_pod_gpu": "NVIDIA A100-SXM4-80GB, GPU-a638261b-cc3f-8493-3ba0-59ef81474ae3, 81920 MiB, 400.00 W (ran smoke test and A1_short only)"
+}
