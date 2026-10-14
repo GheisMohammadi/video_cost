@@ -2,7 +2,7 @@
 
 # Round 9 test design: quantization on top of round 8's 4-step LoRA
 
-Status: the loading combination is confirmed working (quantized transformer plus LoRA attaches cleanly, both experts), but no generation result exists yet. First attempt: `torchao`'s latest release failed to import against this pipeline's torch version; a compatible version (0.17.0) was found, then diffusers 0.41.0's `TorchAoConfig` required an `AOBaseConfig` instance rather than the string argument that worked locally against an older diffusers version -- both fixed before any pod cost. Loading itself then measured 650s (versus round 8's ~100s for plain bf16), because the C++ acceleration kernels this torchao version needs are not available for this pipeline's torch version -- quantization runs through a slower fallback path. Since the session script originally reloaded the model once per process launch, two separate launches (a loading check, then a smoke test) spent the 650s load cost twice, leaving the guard's 40-minute hard deadline too little room for the smoke test's generation step to finish -- the guard stopped the pod on schedule, correctly, mid-generation. Fixed: `quant_session.py` now loads once per process and runs the warm-up sanity check and the real job list in the same run, regardless of which mode is requested.
+Status: run complete. Results, the two earlier pod attempts that preceded a working run, and limitations are in `README.md`. Headline: $0.0076/video-second generation-only, 5.25x cheaper than fal and 1.27x faster than round 8's already-fast result; quantized loading itself is a real, separate cost (581.6 s one-time per session) worth weighing against how many clips a session generates.
 
 ## 1. Question
 

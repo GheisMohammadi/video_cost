@@ -1,0 +1,19 @@
+{
+ "note": "The pod that produced this round's results. Two earlier pod attempts (a loading-version bug, then a separate-process reload timing issue) ran before this one and produced no generation output; neither is reflected here.",
+ "utc": "2026-10-14 15:42:xx",
+ "gpu": "NVIDIA A100-SXM4-80GB, 580.126.16, 81920 MiB, 400.00 W, 1410 MHz",
+ "gpu_uuid": "GPU-f465cf18-638d-f1be-2fe3-026b8f4b2897",
+ "versions": {
+  "torch": "2.8.0+cu128",
+  "diffusers": "0.41.0",
+  "torchao": "0.17.0",
+  "python": "3.12.3"
+ },
+ "fails": [],
+ "matmul_fp16_tflops_quick_check": 95.6,
+ "cache_fstype": "overlay",
+ "weights": "downloaded this session",
+ "quantized_load_s_both_experts": 581.6,
+ "lora_attach_s": 1.7,
+ "torchao_note": "C++ acceleration kernels unavailable for this torch version (needs torch >= 2.11.0, pod has 2.8.0); quantization runs through a slower fallback path during loading. Generation itself was still faster than round 8's unquantized result."
+}
