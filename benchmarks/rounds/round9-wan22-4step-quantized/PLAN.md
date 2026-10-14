@@ -2,7 +2,7 @@
 
 # Round 9 test design: quantization on top of round 8's 4-step LoRA
 
-Status: researched and scoped; nothing run yet. Round 8 found the first result in this project where self-hosting beats fal's price (4.1x cheaper, 5.27x faster, 4-step distillation LoRA on Wan 2.2). This round tests the next lever from the same source project (LightX2V): quantization, stacked on the exact setup round 8 already validated, on the same hardware.
+Status: the loading combination is confirmed working (quantized transformer plus LoRA attaches cleanly, both experts), but no generation result exists yet. First attempt: `torchao`'s latest release failed to import against this pipeline's torch version; a compatible version (0.17.0) was found, then diffusers 0.41.0's `TorchAoConfig` required an `AOBaseConfig` instance rather than the string argument that worked locally against an older diffusers version -- both fixed before any pod cost. Loading itself then measured 650s (versus round 8's ~100s for plain bf16), because the C++ acceleration kernels this torchao version needs are not available for this pipeline's torch version -- quantization runs through a slower fallback path. Since the session script originally reloaded the model once per process launch, two separate launches (a loading check, then a smoke test) spent the 650s load cost twice, leaving the guard's 40-minute hard deadline too little room for the smoke test's generation step to finish -- the guard stopped the pod on schedule, correctly, mid-generation. Fixed: `quant_session.py` now loads once per process and runs the warm-up sanity check and the real job list in the same run, regardless of which mode is requested.
 
 ## 1. Question
 

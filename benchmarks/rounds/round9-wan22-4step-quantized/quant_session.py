@@ -32,6 +32,7 @@ import imageio
 import numpy as np
 import torch
 from diffusers import AutoencoderKLWan, TorchAoConfig, WanPipeline, WanTransformer3DModel
+from torchao.quantization import Int8WeightOnlyConfig
 from diffusers.utils import export_to_video
 from huggingface_hub import snapshot_download
 
@@ -114,7 +115,7 @@ print("PREFLIGHT_OK", json.dumps(pre), flush=True)
 
 # ---------------------------------------------------------------- load, quantize, LoRA
 t = time.time()
-quant_config = TorchAoConfig("int8_weight_only")
+quant_config = TorchAoConfig(Int8WeightOnlyConfig())
 vae = AutoencoderKLWan.from_pretrained(MODEL_ID, subfolder="vae", torch_dtype=torch.float32)
 transformer = WanTransformer3DModel.from_pretrained(MODEL_ID, subfolder="transformer", quantization_config=quant_config, torch_dtype=torch.bfloat16)
 transformer_2 = WanTransformer3DModel.from_pretrained(MODEL_ID, subfolder="transformer_2", quantization_config=quant_config, torch_dtype=torch.bfloat16)
@@ -222,10 +223,12 @@ def run_job(job, name_suffix, steps, guidance, guidance_2):
 
 spec = json.load(open(args.jobs))
 
-if args.mode == "smoke":
-    job = spec["warmup"]
-    run_job(job, "_quantized_guidance1", 4, 1.0, 1.0)
-else:
+# "smoke" and "full" both run in this same process, after the single load above -- loading the
+# quantized model twice (once per separate process launch) cost 650s each on the first pod attempt
+# and ate the whole guard deadline before any generation finished. One load, then warm-up as a sanity
+# check, then the real jobs, all in one process, regardless of which mode was requested.
+run_job(spec["warmup"], "_quantized_guidance1", 4, 1.0, 1.0)
+if args.mode == "full":
     for job in spec["jobs"]:
         run_job(job, "", 4, args.guidance, args.guidance_2)
 
