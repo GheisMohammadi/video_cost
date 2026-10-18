@@ -57,14 +57,31 @@ What the described QA process (a human checking every frame for hands, teeth, te
 4. 480p only. Whether resolution affects text legibility (as opposed to text *correctness*, which is a different problem) is untested here.
 5. Neither config's whiteboard-transparency defect (config B) nor general garbling (both configs) was tested across repeats -- one clip per config, same limitation as every prior round.
 
-## 6. Still to do
+## 6. Overlay prototype: the post-production fix, built and tested
 
-1. Research and prototype the post-production overlay approach the field standardizes on: detect the whiteboard region, composite real text onto it, rather than relying on generation.
+Section 4's conclusion -- composite real text onto the video rather than generate it -- was built and tested against config A's clip, entirely on local hardware, no GPU or pod involved.
+
+**Method**: per-frame person segmentation (mediapipe's `ImageSegmenter`, the `selfie_segmenter` model) separates the subject (lawyer, arm, marker) from everything else in each of the 81 frames. The non-subject area is replaced with a flat board-color fill plus the real script text, rendered with a handwriting-style font (`Bradley Hand Bold`) at the position the original board text occupied. The subject is then composited back on top of that layer, frame by frame, so he still appears to be standing in front of the board. The 81 composited frames are re-encoded into a video at the original 16 fps.
+
+**Result**: <video src="clips/overlay_prototype.mp4" controls width="420"></video> -- every word on the board is now the real, correct script, stable and readable across the whole clip, with the subject still correctly in front of it in every frame checked (start, middle, end).
+
+**What this prototype does not yet do**:
+1. The text is static (the same full block in every frame), not an animated reveal that tracks the marker the way real handwriting would -- a viewer can tell the board was replaced wholesale, not written live.
+2. The board fill is a flat color sampled from one clean area of frame 1, not the original lighting/gradient/texture -- a visible, if minor, mismatch with the surrounding frame.
+3. Segmentation runs independently per frame, with no temporal smoothing -- small edge jitter is visible between frames on close inspection, though it did not break the composite in any of the frames checked.
+4. The whiteboard's region was not detected automatically; this prototype relies on the subject mask alone (subject vs. everything else), which works because the board fills nearly the whole non-subject area in this specific shot. A shot with a visible wall or other background behind the board would need actual board-region detection, not just subject segmentation.
+
+None of these four are blockers to the core finding -- that an accurate, stable, correctly-composited result is achievable with a same-day local prototype -- but they are the real gap between this prototype and something ready to hand to production.
+
+## 7. Still to do
+
+1. Close the four gaps in section 6: an animated text reveal, board-texture-preserving fill, temporal smoothing across frames, and real board-region detection for shots where the board does not fill the whole background.
 2. Investigate automated pre-screening for the described manual QA process -- OCR-based text-match scoring, face/hand artifact detection -- as a triage layer before human review, not a replacement for it.
 3. Test whether other models (open or fal-hosted) handle this same exact prompt any differently, now that a reproducible baseline exists to compare against.
 
-## 7. Files
+## 8. Files
 
 - `jobs.jsonl`: all three records (one shared warm-up, plus one real job per config), reconstructed from the session's own output.
-- `clips/`: `configA_plain27.mp4`, `configB_lora4step.mp4`, each verified by sha256 against its jobs.jsonl record.
+- `clips/`: `configA_plain27.mp4`, `configB_lora4step.mp4` (the two generation configs), and `overlay_prototype.mp4` (section 6's result), each verified by sha256 against its jobs.jsonl record where one exists.
 - `lawyer_job.json`: the frozen job list containing the customer's exact prompt, committed before this round ran.
+- `overlay_prototype/composite.py`: the compositing script behind section 6, runs locally (no GPU), depends on `mediapipe`, `opencv-python-headless`, and `Pillow`.
