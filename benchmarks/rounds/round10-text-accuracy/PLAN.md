@@ -2,7 +2,7 @@
 
 # Round 10 test design: on-screen text accuracy
 
-Status: scoped, nothing run yet. Scope change from rounds 1-9 (cost per video-second) to output quality: can this pipeline render exact on-screen text accurately. Prompted by a real customer case the team flagged, where generated video showed whiteboard text that did not match the intended script and a marker that did not track to the right spot on the board.
+Status: run complete. Results, both clips, and limitations are in `README.md`. Headline: both the highest-quality and the fastest/cheapest config fail completely at reproducing the script's exact text; the fast config additionally shows a visual breakdown (a semi-transparent, reflective whiteboard) the slow config does not.
 
 ## 1. Question
 

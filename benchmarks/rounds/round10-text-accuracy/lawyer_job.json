@@ -26,6 +26,7 @@
    "stratum": "customer_prompt",
    "prompt_id": "round10_lawyer_whiteboard",
    "prompt": "a white, male lawyer use marker and whiteboard to explain the exact words of the following: Thousands of U.S. advertisers are pursuing claims against Google. Advertisers are filing refunds for 20-30% of Ad Spend since 2016. Federal courts have ruled Google illegally monopolized search advertising. Get the facts, fit criteria and risks. Use them for your agency or your clients. The Google Advertiser Claims, explained. DOWNLOAD EXPLAINER File Ad Refunds ADREFUNDS.COM",
+   "tokens": 0,
    "steps": 27,
    "seed": 10001,
    "expected_s": 560,
