@@ -1,0 +1,41 @@
+{
+ "version": 1,
+ "note": "Round 10: a customer prompt flagged as a known text-accuracy failure case (whiteboard text not matching the script, marker not tracking to the right spot). Run as-is, no edits, to reproduce the failure with evidence before researching fixes.",
+ "warmup": {
+  "job": "W0_warmup",
+  "block": "warmup",
+  "stratum": "short",
+  "prompt_id": "2041132845834579975",
+  "prompt": "Show me a film still never seen before brand new shot on ARRI Alexa, hyper realistic film grain, LUT preset, key fill lighting anamorphic lensing shallow depth of field 24mm",
+  "tokens": 44,
+  "steps": 4,
+  "seed": 1,
+  "expected_s": 100,
+  "width": 832,
+  "height": 480,
+  "frames": 81,
+  "fps": 16,
+  "guidance": 3.5,
+  "guidance_2": 4.0,
+  "shift": 5.0
+ },
+ "jobs": [
+  {
+   "job": "L1_lawyer_whiteboard",
+   "block": "text_accuracy",
+   "stratum": "customer_prompt",
+   "prompt_id": "round10_lawyer_whiteboard",
+   "prompt": "a white, male lawyer use marker and whiteboard to explain the exact words of the following: Thousands of U.S. advertisers are pursuing claims against Google. Advertisers are filing refunds for 20-30% of Ad Spend since 2016. Federal courts have ruled Google illegally monopolized search advertising. Get the facts, fit criteria and risks. Use them for your agency or your clients. The Google Advertiser Claims, explained. DOWNLOAD EXPLAINER File Ad Refunds ADREFUNDS.COM",
+   "steps": 27,
+   "seed": 10001,
+   "expected_s": 560,
+   "width": 832,
+   "height": 480,
+   "frames": 81,
+   "fps": 16,
+   "guidance": 3.5,
+   "guidance_2": 4.0,
+   "shift": 5.0
+  }
+ ]
+}
