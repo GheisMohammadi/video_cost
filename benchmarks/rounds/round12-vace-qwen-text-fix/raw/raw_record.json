@@ -1,0 +1,22 @@
+{
+ "tests": [
+  {
+   "test": "A_vace",
+   "load_s": 18.90370273590088,
+   "generate_s": 798.4743840694427,
+   "sha256": "b66fb84cd844635cb46bf7b9665902bb5d072cdfe69fe90f61c89795888233f7",
+   "file": "test_a_vace.mp4",
+   "steps": 30,
+   "seed": 10001
+  },
+  {
+   "test": "B_qwen_image_edit",
+   "load_s": 194.7166018486023,
+   "generate_s": 92.09499454498291,
+   "sha256": "b371598198125eb51fe5e5d3058fd791e52f68e4c201ffa1f8f8e5d56e947c11",
+   "file": "test_b_qwen_edit.png",
+   "steps": 30,
+   "seed": 10001
+  }
+ ]
+}
