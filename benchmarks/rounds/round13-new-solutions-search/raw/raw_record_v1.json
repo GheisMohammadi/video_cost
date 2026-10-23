@@ -1,0 +1,14 @@
+{
+ "model": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_t2v",
+ "prompt_id": "round10_lawyer_whiteboard",
+ "seed": 10001,
+ "height": 480,
+ "width": 832,
+ "num_frames": 121,
+ "fps": 24,
+ "num_inference_steps": 50,
+ "load_s": 249.64217853546143,
+ "generate_s": 2032.562804698944,
+ "sha256": "89ec0e6c56f24b6ca16274dea390c8e35e1daade625a521b853b72ebba43f950",
+ "file": "hunyuan_lawyer.mp4"
+}

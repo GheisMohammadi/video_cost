@@ -1,0 +1,15 @@
+{
+ "model": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_t2v",
+ "prompt_id": "round10_lawyer_whiteboard_quoted",
+ "note": "v2: literal text wrapped in quotation marks per official Prompt Handbook section II.4",
+ "seed": 10001,
+ "height": 480,
+ "width": 832,
+ "num_frames": 121,
+ "fps": 24,
+ "num_inference_steps": 50,
+ "load_s": 253.8626036643982,
+ "generate_s": 2040.17929148674,
+ "sha256": "65fbd1b10483a3e14f055694b547f2e7061a821ae5bab7e5b57c8c0aede51f97",
+ "file": "hunyuan_lawyer_v2_quoted.mp4"
+}
