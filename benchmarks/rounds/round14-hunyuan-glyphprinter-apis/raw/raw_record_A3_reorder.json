@@ -1,0 +1,16 @@
+{
+ "model": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_t2v",
+ "job": "A3_reorder",
+ "prompt_id": "round14_lawyer_A3_reorder",
+ "note": "Same five quotes as round 13 v3 but previously-failing lines first",
+ "seed": 10001,
+ "height": 480,
+ "width": 832,
+ "num_frames": 121,
+ "fps": 24,
+ "num_inference_steps": 50,
+ "load_s": 52.67038154602051,
+ "generate_s": 2030.2905843257904,
+ "sha256": "68d0dacc418d46fe1a3a6f9aa8c90f9dfb0772dd3bbac977cdfda75489f56f6d",
+ "file": "hunyuan_A3_reorder.mp4"
+}
