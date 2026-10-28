@@ -1,0 +1,15 @@
+{
+ "model": "wan30_marker_sync",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "extreme close-up on a whiteboard, completely blank. a hand holds a black marker, its tip touching the whiteboard surface. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position. By the time the tip reaches the end of the line, it has traced out the full sentence \"Thousands of U.S. advertisers are pursuing claims against Google.\" letter by letter, left to right, in cursive handwriting. the camera holds steady on the whiteboard the entire time.",
+  "duration": 5,
+  "resolution": "1080p",
+  "aspect_ratio": "16:9",
+  "seed": 10001
+ },
+ "request_id": "01a184d7-a759-7a42-9777-195ce63ec9e9",
+ "video_url": "https://v3b.fal.media/files/b/0ab04090/vNBwRNAhCbt0LRQ480PUq_GibfRIlQ.mp4",
+ "generate_s": 174.93625688552856,
+ "file": "wan30_marker_sync_round20.mp4"
+}
