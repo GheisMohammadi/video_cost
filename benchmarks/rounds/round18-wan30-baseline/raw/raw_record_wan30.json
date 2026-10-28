@@ -1,0 +1,15 @@
+{
+ "model": "wan30",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "a whiteboard with four lines of handwritten text and a smaller line below them. The first line reads \"Thousands of U.S. advertisers are pursuing claims against Google.\" The second line reads \"Advertisers are filing refunds for 20-30% of Ad Spend since 2016.\" The third line reads \"Federal courts have ruled Google illegally monopolized search advertising.\" The fourth line reads \"Get the facts, fit criteria and risks.\" Below in smaller text it reads \"DOWNLOAD EXPLAINER File Ad Refunds ADREFUNDS.COM\" a white, male lawyer stands beside the whiteboard holding a marker, pointing at the board and explaining it to the camera, the whiteboard stays fully visible in frame",
+  "duration": 5,
+  "resolution": "1080p",
+  "aspect_ratio": "16:9",
+  "seed": 10001
+ },
+ "request_id": "01a184a2-4842-7673-bcd6-3a8191981570",
+ "video_url": "https://v3b.fal.media/files/b/0ab03f30/CrGMwlF-96Ro2ndRUfpH3_kKRVsNWI.mp4",
+ "generate_s": 155.22887301445007,
+ "file": "wan30_round18.mp4"
+}
