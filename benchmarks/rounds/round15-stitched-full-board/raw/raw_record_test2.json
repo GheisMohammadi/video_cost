@@ -1,0 +1,14 @@
+{
+ "model": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-480p_i2v",
+ "test": "round15_test2_i2v_continuation",
+ "note": "I2V continuation from round 14 A1's final frame, adding lines 3-5 as new quoted text",
+ "start_image": "round14 A1_two_lines.mp4 final frame (lines 1-2 already correct)",
+ "seed": 10001,
+ "num_frames": 121,
+ "fps": 24,
+ "num_inference_steps": 50,
+ "load_s": 251.90192294120789,
+ "generate_s": 1975.2253286838531,
+ "sha256": "3b46659762b2c0711157991d09bcbd8413b3dc0b2712d0ff02c8233a53de3d87",
+ "file": "i2v_continuation.mp4"
+}
