@@ -1,0 +1,15 @@
+{
+ "model": "wan30_sequential",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "extreme close-up on a whiteboard, completely blank. a hand holds a black marker, its tip touching the whiteboard surface. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position. First, the tip traces out the full first line, \"Thousands of U.S. advertisers are pursuing claims against Google.\" letter by letter, left to right. Only after that entire first line is completely finished does the hand move the marker down to start a new line below it -- no part of the second line appears while the first line is still being written. Then the tip traces out the second line, \"Advertisers are filing refunds for 20-30% of Ad Spend since 2016.\" letter by letter, left to right, the same way. the two lines never overlap in time -- the first is fully done before the second begins. in cursive handwriting. the camera holds steady on the whiteboard the entire time.",
+  "duration": 5,
+  "resolution": "1080p",
+  "aspect_ratio": "16:9",
+  "seed": 10001
+ },
+ "request_id": "01a184df-4b37-7f23-b9f3-8ad6a2886404",
+ "video_url": "https://v3b.fal.media/files/b/0ab040bf/ExNicTcZA8t3Oa5IP0Ajq_qBjQ6S9h.mp4",
+ "generate_s": 141.92558097839355,
+ "file": "wan30_sequential_round21.mp4"
+}
