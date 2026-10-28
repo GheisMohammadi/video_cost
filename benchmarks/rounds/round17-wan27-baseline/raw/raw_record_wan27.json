@@ -1,0 +1,14 @@
+{
+ "model": "wan27",
+ "endpoint": "fal-ai/wan/v2.7/text-to-video",
+ "payload": {
+  "prompt": "a whiteboard with four lines of handwritten text and a smaller line below them. The first line reads \"Thousands of U.S. advertisers are pursuing claims against Google.\" The second line reads \"Advertisers are filing refunds for 20-30% of Ad Spend since 2016.\" The third line reads \"Federal courts have ruled Google illegally monopolized search advertising.\" The fourth line reads \"Get the facts, fit criteria and risks.\" Below in smaller text it reads \"DOWNLOAD EXPLAINER File Ad Refunds ADREFUNDS.COM\" a white, male lawyer stands beside the whiteboard holding a marker, pointing at the board and explaining it to the camera",
+  "duration": 5,
+  "resolution": "1080p",
+  "aspect_ratio": "16:9"
+ },
+ "request_id": "01a18495-32fd-7a90-81cf-9ff8df3471ce",
+ "video_url": "https://v3b.fal.media/files/b/0ab03f05/MIH6xdoZnvTL4iS0PMu2R_CSDXlomW.mp4",
+ "generate_s": 577.772961139679,
+ "file": "wan27_round17.mp4"
+}
