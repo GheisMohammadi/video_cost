@@ -1,0 +1,15 @@
+{
+ "model": "wan30_writing",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "a completely blank whiteboard. a white, male lawyer stands beside it holding a marker. he begins writing on the board by hand, one line at a time, the handwritten text appearing progressively as he writes it, stroke by stroke, over the course of the video. He writes a first line that reads \"Thousands of U.S. advertisers are pursuing claims against Google.\" then a second line that reads \"Advertisers are filing refunds for 20-30% of Ad Spend since 2016.\" then a third line that reads \"Federal courts have ruled Google illegally monopolized search advertising.\" then a fourth line that reads \"Get the facts, fit criteria and risks.\" then smaller text below that reads \"DOWNLOAD EXPLAINER File Ad Refunds ADREFUNDS.COM\" he keeps writing and pointing at the board while explaining it to the camera, the whiteboard stays fully visible in frame",
+  "duration": 5,
+  "resolution": "1080p",
+  "aspect_ratio": "16:9",
+  "seed": 10001
+ },
+ "request_id": "01a184ad-f1d7-7d72-843b-3c7e4fb37c42",
+ "video_url": "https://v3b.fal.media/files/b/0ab03f89/Cy_cx-YkSNSerfzB097Ul_QDxOyVgi.mp4",
+ "generate_s": 276.33087515830994,
+ "file": "wan30_writing_round19.mp4"
+}
