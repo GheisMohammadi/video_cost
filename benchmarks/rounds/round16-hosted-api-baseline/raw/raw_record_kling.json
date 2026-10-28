@@ -1,0 +1,12 @@
+{
+ "model": "kling",
+ "endpoint": "fal-ai/kling-video/v2.5-turbo/pro/text-to-video",
+ "payload": {
+  "prompt": "a whiteboard with four lines of handwritten text and a smaller line below them. The first line reads \"Thousands of U.S. advertisers are pursuing claims against Google.\" The second line reads \"Advertisers are filing refunds for 20-30% of Ad Spend since 2016.\" The third line reads \"Federal courts have ruled Google illegally monopolized search advertising.\" The fourth line reads \"Get the facts, fit criteria and risks.\" Below in smaller text it reads \"DOWNLOAD EXPLAINER File Ad Refunds ADREFUNDS.COM\" a white, male lawyer stands beside the whiteboard holding a marker, pointing at the board and explaining it to the camera",
+  "duration": "5"
+ },
+ "request_id": "01a1848b-59ae-7380-9bc9-f92b6b692d3f",
+ "video_url": "https://v3b.fal.media/files/b/0ab03ea0/nHV8A_JgwKmOcJHilm8FQ_output.mp4",
+ "generate_s": 203.99124693870544,
+ "file": "kling_round16.mp4"
+}
