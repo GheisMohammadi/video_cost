@@ -1,0 +1,15 @@
+{
+ "model": "wan30_round22_segB",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "wide shot, a young white woman, attractive and fashionable, with styled hair and modern stylish clothing, standing in a bright well-lit room in front of a whiteboard, fully visible from the waist up. the whiteboard beside her is completely blank. she holds a black marker, its tip touching the whiteboard surface. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position. First, the tip traces out the full first line, \"So this week I pay $99 on x.country\" letter by letter, left to right. Only after that entire first line is completely finished does she move the marker down to start a new line below it -- no part of the second line appears while the first line is still being written. Then the tip traces out the second line, \"to grow my business on TikTok.\" letter by letter, left to right, the same way. the two lines never overlap in time -- the first is fully done before the second begins. in cursive handwriting. she glances at the camera occasionally but keeps writing. the camera holds steady the entire time.",
+  "duration": 15,
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "seed": 10001
+ },
+ "request_id": "01a18825-79a7-7ca0-ad9f-c9816d3d59de",
+ "video_url": "https://v3b.fal.media/files/b/0ab0564b/D8Kzy_bsICKCilHgk1aZs_epROeCq2.mp4",
+ "generate_s": 363.953289270401,
+ "file": "wan30_round22_segB.mp4"
+}

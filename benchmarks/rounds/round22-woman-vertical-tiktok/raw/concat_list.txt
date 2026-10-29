@@ -1,0 +1,2 @@
+file '/Users/gheis/notes/video_generation/benchmarks/rounds/round22-woman-vertical-tiktok/clips/wan30_round22_segA.mp4'
+file '/Users/gheis/notes/video_generation/benchmarks/rounds/round22-woman-vertical-tiktok/clips/wan30_round22_segB.mp4'
