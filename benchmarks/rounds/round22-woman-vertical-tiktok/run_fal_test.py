@@ -31,7 +31,11 @@ PRESENTER = (
 )
 
 PROMPT = (
-    f"wide shot, {PRESENTER}. the whiteboard beside her is completely blank. she holds "
+    f"wide shot, {PRESENTER}. the whiteboard beside her is completely blank. at the very "
+    "start she looks at the camera for a moment, then turns her head to look at the "
+    "whiteboard and keeps her eyes on the board and on the marker tip the entire time she "
+    "is writing -- she never looks at the camera while actively writing, since no person "
+    "can write accurately on a board without looking at it. she holds "
     "a black marker, its tip touching the whiteboard surface. the marker tip moves slowly "
     "and steadily from left to right across the board, and a single continuous line of "
     "black ink trail appears exactly where the tip has physically touched, one letter "
@@ -43,8 +47,10 @@ PROMPT = (
     "the first line is still being written. "
     f'Then the tip traces out the second line, "{L2}" letter by letter, left to right, '
     "the same way. the two lines never overlap in time -- the first is fully done before "
-    "the second begins. in cursive handwriting. she glances at the camera occasionally but "
-    "keeps writing. the camera holds steady the entire time."
+    "the second begins. in cursive handwriting. her eyes stay on the whiteboard and the "
+    "marker tip throughout the writing, not on the camera. only after both lines are "
+    "completely finished does she turn her head back to look at the camera. the camera "
+    "holds steady the entire time."
 )
 
 ENDPOINT = "alibaba/wan-3.0/text-to-video"

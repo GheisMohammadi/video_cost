@@ -4,6 +4,8 @@
 
 Status: complete, one open issue flagged for review. Boss directive: new script about vibe-coding/TikTok ad spend, progressive whiteboard writing (not pre-written), presenter changed to a woman, mid-screen caption overlay added in post, output always 9:16/720p/30s (15s fallback).
 
+**Correction**: the first version of this round had the presenter looking at the camera while actively writing, which is not something a person can physically do while writing accurately. The prompt originally included "she glances at the camera occasionally but keeps writing" -- removed and replaced with an explicit instruction that she looks at the camera only before writing starts and after both lines are complete, and keeps her eyes on the board/marker tip the entire time she is writing. Both segments were regenerated with the corrected prompt; text accuracy and marker sync held after the fix (see section 3).
+
 ## Watch the clip
 
 <video src="clips/round22_final_captioned.mp4" controls width="260"></video>
@@ -28,25 +30,30 @@ Status: complete, one open issue flagged for review. Boss directive: new script 
 | Generation time | Segment A: 353s (~5.9 min). Segment B: 364s (~6.1 min) |
 | Cost | ~$1.50/segment at 720p -> ~$3 total for both generations |
 
-Prompt pattern (Segment A shown; Segment B identical structure with the second half of the script):
+Prompt pattern, corrected version (Segment A shown; Segment B identical structure with the second half of the script):
 
 ```
 wide shot, a young white woman, attractive and fashionable, with styled hair and modern
 stylish clothing, standing in a bright well-lit room in front of a whiteboard, fully
-visible from the waist up. the whiteboard beside her is completely blank. she holds a
-black marker, its tip touching the whiteboard surface. the marker tip moves slowly and
-steadily from left to right across the board, and a single continuous line of black ink
-trail appears exactly where the tip has physically touched, one letter forming at a time,
-following the tip precisely -- no ink or text ever appears ahead of or away from the tip's
-current position.
+visible from the waist up. the whiteboard beside her is completely blank. at the very
+start she looks at the camera for a moment, then turns her head to look at the whiteboard
+and keeps her eyes on the board and on the marker tip the entire time she is writing --
+she never looks at the camera while actively writing, since no person can write accurately
+on a board without looking at it. she holds a black marker, its tip touching the
+whiteboard surface. the marker tip moves slowly and steadily from left to right across
+the board, and a single continuous line of black ink trail appears exactly where the tip
+has physically touched, one letter forming at a time, following the tip precisely -- no
+ink or text ever appears ahead of or away from the tip's current position.
 First, the tip traces out the full first line, "I vibe-coded my app in a weekend." letter
 by letter, left to right. Only after that entire first line is completely finished does
 she move the marker down to start a new line below it -- no part of the second line
 appears while the first line is still being written.
 Then the tip traces out the second line, "Launched; 19 signed up." letter by letter, left
 to right, the same way. the two lines never overlap in time -- the first is fully done
-before the second begins. in cursive handwriting. she glances at the camera occasionally
-but keeps writing. the camera holds steady the entire time.
+before the second begins. in cursive handwriting. her eyes stay on the whiteboard and the
+marker tip throughout the writing, not on the camera. only after both lines are completely
+finished does she turn her head back to look at the camera. the camera holds steady the
+entire time.
 ```
 
 ## 3. Results
@@ -66,6 +73,16 @@ Frame inspection at 1-second spacing across both 15s segments, plus final-frame 
 2. Render 4 caption cards (one per script line) as transparent PNGs with PIL (`raw/captions/cap{0-3}.png`), centered horizontally, vertically mid-screen, semi-transparent rounded background box, white bold text, auto word-wrapped.
 3. Composite the 4 PNGs onto the stitched video with timed `overlay=...:enable='between(t,start,end)'` filters (~7-8s per line), re-encoded with libx264.
 4. Output: `clips/round22_final_captioned.mp4` -- 720x1280, 30.0s, 30fps.
+
+## 4.1 Eye-gaze correction
+
+Frame inspection confirms the fix held across both segments:
+
+- Frame 0: she looks directly at the camera (the intended opening beat).
+- Mid-writing frames (both segments): she is consistently shown in profile, eyes on the board and the marker tip, never toward the camera while text is forming.
+- Final frame (both segments): she turns back to face the camera only once both lines are fully written.
+
+Text accuracy and marker sync were unaffected by the fix -- all 4 lines still render exactly correct.
 
 ## 5. What this means
 
