@@ -18,17 +18,40 @@ RAW_DIR = os.path.join(OUT_DIR, "raw")
 
 SEGMENT = sys.argv[1] if len(sys.argv) > 1 else "A"
 
-LINES = {
-    "A": ("I vibe-coded my app in a weekend.", "Launched; 19 signed up."),
-    "B": ("So this week I pay $99 on x.country", "to grow my business on TikTok."),
+# Each sentence is pre-split into short rows that fit on one board row at this
+# framing, so the model is never left to decide its own wrap point -- it was
+# wrapping sentences into two rows and filling both rows at once (letters
+# appearing in row 2 before row 1 had every word), which is what a real person
+# writing by hand cannot do. Giving explicit short rows avoids that entirely.
+ROWS = {
+    "A": ["I vibe-coded my app", "in a weekend.", "Launched; 19", "signed up."],
+    "B": ["So this week I pay", "$99 on x.country", "to grow my business", "on TikTok."],
 }
-L1, L2 = LINES[SEGMENT]
+LINES = ROWS[SEGMENT]
 
 PRESENTER = (
     "a young white woman, attractive and fashionable, with styled hair and modern "
     "stylish clothing, standing in a bright well-lit room in front of a whiteboard, "
     "fully visible from the waist up"
 )
+
+# Chain the rows with the same sequencing language verified in round 21 (one
+# line fully done before the next begins), generalized from 2 rows to N.
+row_steps = []
+for i, row in enumerate(LINES):
+    if i == 0:
+        row_steps.append(
+            f'First, the tip traces out the full first row, "{row}" letter by letter, '
+            "left to right."
+        )
+    else:
+        row_steps.append(
+            "Only after that entire row is completely finished does she move the marker "
+            f'down to start the next row -- no part of it appears while the row above is '
+            f'still being written. Then the tip traces out the next row, "{row}" letter '
+            "by letter, left to right, the same way."
+        )
+ROW_SEQUENCE = " ".join(row_steps)
 
 PROMPT = (
     f"wide shot, {PRESENTER}. the whiteboard beside her is completely blank. at the very "
@@ -41,14 +64,10 @@ PROMPT = (
     "black ink trail appears exactly where the tip has physically touched, one letter "
     "forming at a time, following the tip precisely -- no ink or text ever appears ahead "
     "of or away from the tip's current position. "
-    f'First, the tip traces out the full first line, "{L1}" letter by letter, left to '
-    "right. Only after that entire first line is completely finished does she move the "
-    "marker down to start a new line below it -- no part of the second line appears while "
-    "the first line is still being written. "
-    f'Then the tip traces out the second line, "{L2}" letter by letter, left to right, '
-    "the same way. the two lines never overlap in time -- the first is fully done before "
-    "the second begins. in cursive handwriting. her eyes stay on the whiteboard and the "
-    "marker tip throughout the writing, not on the camera. only after both lines are "
+    f"{ROW_SEQUENCE} "
+    "no two rows are ever written at the same time -- each row is entirely finished before "
+    "the next one starts. in cursive handwriting. her eyes stay on the whiteboard and the "
+    "marker tip throughout the writing, not on the camera. only after all four rows are "
     "completely finished does she turn her head back to look at the camera. the camera "
     "holds steady the entire time."
 )

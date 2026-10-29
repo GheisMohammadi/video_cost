@@ -4,7 +4,9 @@
 
 Status: complete, one open issue flagged for review. Boss directive: new script about vibe-coding/TikTok ad spend, progressive whiteboard writing (not pre-written), presenter changed to a woman, mid-screen caption overlay added in post, output always 9:16/720p/30s (15s fallback).
 
-**Correction**: the first version of this round had the presenter looking at the camera while actively writing, which is not something a person can physically do while writing accurately. The prompt originally included "she glances at the camera occasionally but keeps writing" -- removed and replaced with an explicit instruction that she looks at the camera only before writing starts and after both lines are complete, and keeps her eyes on the board/marker tip the entire time she is writing. Both segments were regenerated with the corrected prompt; text accuracy and marker sync held after the fix (see section 3).
+**Correction 1 (eye gaze)**: the first version of this round had the presenter looking at the camera while actively writing, which is not something a person can physically do while writing accurately. The prompt originally included "she glances at the camera occasionally but keeps writing" -- removed and replaced with an explicit instruction that she looks at the camera only before writing starts and after both lines are complete, and keeps her eyes on the board/marker tip the entire time she is writing. Both segments were regenerated with the corrected prompt; text accuracy and marker sync held after the fix.
+
+**Correction 2 (simultaneous-line writing)**: after correction 1, closer tight-frame inspection found a second, more serious physical-plausibility problem: within a single sentence that wrapped onto two visual rows, the model was filling both rows concurrently -- the second row's letters appeared while the first row still had missing words, something no person writing by hand can do. The original prompt only constrained ordering *between* the two full sentences, not between a sentence's own wrapped rows, and the model was choosing its own (bad) wrap point. Fixed by pre-splitting each sentence into explicit short rows (so the model never decides where to wrap) and chaining them with the same "next row doesn't start until this one is fully finished" language verified in round 21, generalized from 2 rows to 4. This made 3 of 4 row transitions fully clean. The remaining transition (row 2 to row 3) still shows a brief (~1s) overlap where the next row's first letter appears slightly before the previous row's last word is finished. An additional attempt to fix this with an explicit "lift the marker off the board and pause" instruction did not eliminate the overlap and introduced an unwanted side effect (stray bullet-point dashes/dots before each row). Given diminishing returns after several $1.50 test generations, this was accepted as the final version rather than pursued further -- see section 4.2.
 
 ## Watch the clip
 
@@ -84,6 +86,22 @@ Frame inspection confirms the fix held across both segments:
 
 Text accuracy and marker sync were unaffected by the fix -- all 4 lines still render exactly correct.
 
+## 4.2 Sequential-row-writing correction
+
+The script was pre-split into 4 short rows per segment instead of 2 sentences left for the model to wrap on its own:
+
+- Segment A: "I vibe-coded my app" / "in a weekend." / "Launched; 19" / "signed up."
+- Segment B: "So this week I pay" / "$99 on x.country" / "to grow my business" / "on TikTok."
+
+Frame inspection of the final version (every 1s, plus tight spacing around each row transition):
+
+- Row 1 to row 2: clean -- row 2 has no content until row 1's last word is on the board.
+- Row 2 to row 3: a brief overlap remains -- row 3's first 1-2 letters appear roughly 1 second before row 2's final word is finished, visible across frames ~250-270.
+- Row 3 to row 4: clean.
+- All 4 rows render exactly correct in both segments, including "$99" and "x.country".
+
+This is a large improvement over the original defect (two entire sentences appearing to grow at once, for the whole second half of the clip), narrowed down to one brief, partial overlap at a single transition. Not fully eliminated after three different prompt strategies (implicit sentence-level-only rule, explicit pre-split rows, and an explicit marker-lift pause) -- accepted as the final result per direction to stop iterating given cost (~$10-11 spent on 7 test generations investigating this single issue).
+
 ## 5. What this means
 
 | Question | Answer |
@@ -97,8 +115,9 @@ Text accuracy and marker sync were unaffected by the fix -- all 4 lines still re
 ## 6. Still to do / open for direction
 
 1. **Continuity at the cut**: decide whether the current hard cut (new outfit/location) is acceptable as a stylistic "two takes" edit, or whether it needs fixing. A true fix would need an image-to-video continuation approach (feed Segment A's last frame into Segment B's generation as a starting image) rather than independent text-to-video calls with a shared seed -- this hasn't been tested and would need its own round.
-2. Extend to more than 2 segments if the boss wants finer caption timing granularity or more script content.
-3. If the cut is acceptable as-is, this prompt pattern (wide shot + mechanically explicit sync phrasing + sequencing + 9:16/720p) becomes the new standard template for future rounds.
+2. **Residual row-transition overlap**: one of the three row boundaries per segment still shows a brief (~1s) overlap where the next row starts just before the previous one finishes. Accepted as the final version for this round (see section 4.2) rather than pursued further, given cost. Worth retrying with fresh ideas in a future round if this remains unacceptable -- e.g. even shorter per-row text, or splitting each row into its own separate generation (proven clean in round 20/21, at the cost of more cuts and more spend).
+3. Extend to more than 2 segments if the boss wants finer caption timing granularity or more script content.
+4. If both the cut and the residual overlap are acceptable as-is, this prompt pattern (wide shot + mechanically explicit sync phrasing + pre-split rows + eyes-on-board + 9:16/720p) becomes the new standard template for future rounds.
 
 ## 7. Files
 
@@ -113,4 +132,4 @@ Text accuracy and marker sync were unaffected by the fix -- all 4 lines still re
 
 ## 8. Cost
 
-~$3 for the two Wan 3.0 generations (720p, 15s each). Post-processing (ffmpeg/PIL) is free/local.
+~$3 for the final pair of Wan 3.0 generations (720p, 15s each). Post-processing (ffmpeg/PIL) is free/local. The round as a whole, including iterating on the eye-gaze and row-sequencing fixes (7 test generations total), cost roughly $10-11.
