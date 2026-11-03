@@ -1,0 +1,18 @@
+{
+ "model": "wan30_round27_row5",
+ "row_index": 5,
+ "row_text": "So this week I pay",
+ "endpoint": "alibaba/wan-3.0/image-to-video",
+ "chained_from": "clips/wan30_round27_row4.mp4",
+ "payload": {
+  "prompt": "continuing from this exact frame -- same woman, same outfit, same whiteboard, same room, same camera framing, nothing changes about the scene itself. she is still holding the black marker. she now moves the marker tip to a blank area of the board below her previous writing and begins a new row of text. Do not repeat, continue, retrace, or reuse any part of the text already written on the board. The only new text written in this clip is the sentence \"So this week I pay\" -- write exactly that and nothing else. At the start of this clip, the visible board surface has no new ink on it beyond what is already shown -- no stray marks, no partial letters, nothing floating or disconnected from the marker tip. The very first new mark of ink only begins at the exact moment the tip is already pressed against the board and already moving -- never before, never while the tip is still in the air or still being raised. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position, and no part of the text ever fades in on its own; every letter is drawn by the moving tip. The tip traces out the full sentence, \"So this week I pay\" letter by letter, left to right, in cursive handwriting, in the same handwriting style as the text already on the board. her eyes stay on the whiteboard and the marker tip throughout the writing. only after the row is completely finished does she turn her head back to look at the camera. the camera holds steady the entire time.",
+  "duration": 5,
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "seed": 10001
+ },
+ "request_id": "01a1a2b4-ee06-7602-a174-d8cbb33a4cd9",
+ "video_url": "https://v3b.fal.media/files/b/0ab1044a/HXhPCXM4C4dP2yVodxVww_OfP7hWaq.mp4",
+ "generate_s": 205.12532806396484,
+ "file": "wan30_round27_row5.mp4"
+}
