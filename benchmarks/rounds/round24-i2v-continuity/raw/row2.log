@@ -1,0 +1,18 @@
+--- wan30_round24_row2 ('in a weekend.', endpoint=alibaba/wan-3.0/image-to-video) ---
+wan30_round24_row2 submitted, request_id 01a1a08f-3359-7bc3-b948-2bf1b26ccdf6
+wan30_round24_row2 status IN_PROGRESS elapsed_s 1
+wan30_round24_row2 status IN_PROGRESS elapsed_s 10
+wan30_round24_row2 status IN_PROGRESS elapsed_s 19
+wan30_round24_row2 status IN_PROGRESS elapsed_s 28
+wan30_round24_row2 status IN_PROGRESS elapsed_s 37
+wan30_round24_row2 status IN_PROGRESS elapsed_s 46
+wan30_round24_row2 status IN_PROGRESS elapsed_s 55
+wan30_round24_row2 status IN_PROGRESS elapsed_s 64
+wan30_round24_row2 status IN_PROGRESS elapsed_s 73
+wan30_round24_row2 status IN_PROGRESS elapsed_s 82
+wan30_round24_row2 status IN_PROGRESS elapsed_s 92
+wan30_round24_row2 status IN_PROGRESS elapsed_s 100
+wan30_round24_row2 status IN_PROGRESS elapsed_s 110
+wan30_round24_row2 status IN_PROGRESS elapsed_s 119
+wan30_round24_row2 status COMPLETED elapsed_s 128
+wan30_round24_row2 done in 130.42066311836243 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round24-i2v-continuity/clips/wan30_round24_row2.mp4

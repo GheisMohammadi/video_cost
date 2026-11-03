@@ -1,0 +1,17 @@
+{
+ "model": "wan30_round26_row3",
+ "row_index": 3,
+ "row_text": "Launched; 19",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "vertical 9:16 video, the frame fully filled edge to edge with no letterboxing and no padding bars at the top or bottom. wide shot, a young white woman with shoulder-length straight dark brown hair parted in the middle, wearing a fitted white long-sleeve ribbed top and small gold hoop earrings, standing in a bright room in front of a white whiteboard mounted on a light gray wall, fully visible from the waist up. the whiteboard beside her is completely blank. at the very start she looks at the camera for a moment, then turns her head to look at the whiteboard and keeps her eyes on the board and on the marker tip the entire time she is writing -- she never looks at the camera while actively writing, since no person can write accurately on a board without looking at it. she holds a black marker, its tip touching the whiteboard surface. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position, and no part of the text ever fades in on its own; every letter is drawn by the moving tip. The tip traces out the full sentence, \"Launched; 19\" letter by letter, left to right, in cursive handwriting. her eyes stay on the whiteboard and the marker tip throughout the writing, not on the camera. only after the row is completely finished does she turn her head back to look at the camera. the camera holds steady the entire time.",
+  "duration": 5,
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "seed": 10001
+ },
+ "request_id": "01a1a26b-1aa7-7d61-9ade-5897b4df030e",
+ "video_url": "https://v3b.fal.media/files/b/0ab10267/20MsEXiQlSzdHglrXbfxD_ETG6oOqE.mp4",
+ "generate_s": 222.71727108955383,
+ "file": "wan30_round26_row3.mp4"
+}

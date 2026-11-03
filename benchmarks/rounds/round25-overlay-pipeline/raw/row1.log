@@ -1,0 +1,21 @@
+--- wan30_round25_row1 ('I vibe-coded my app', endpoint=alibaba/wan-3.0/text-to-video) ---
+wan30_round25_row1 submitted, request_id 01a1a0af-d6f2-7331-950e-d1b1a02a67a7
+wan30_round25_row1 status IN_PROGRESS elapsed_s 1
+wan30_round25_row1 status IN_PROGRESS elapsed_s 10
+wan30_round25_row1 status IN_PROGRESS elapsed_s 19
+wan30_round25_row1 status IN_PROGRESS elapsed_s 28
+wan30_round25_row1 status IN_PROGRESS elapsed_s 37
+wan30_round25_row1 status IN_PROGRESS elapsed_s 46
+wan30_round25_row1 status IN_PROGRESS elapsed_s 55
+wan30_round25_row1 status IN_PROGRESS elapsed_s 64
+wan30_round25_row1 status IN_PROGRESS elapsed_s 73
+wan30_round25_row1 status IN_PROGRESS elapsed_s 82
+wan30_round25_row1 status IN_PROGRESS elapsed_s 92
+wan30_round25_row1 status IN_PROGRESS elapsed_s 101
+wan30_round25_row1 status IN_PROGRESS elapsed_s 110
+wan30_round25_row1 status IN_PROGRESS elapsed_s 119
+wan30_round25_row1 status IN_PROGRESS elapsed_s 128
+wan30_round25_row1 status IN_PROGRESS elapsed_s 137
+wan30_round25_row1 status IN_PROGRESS elapsed_s 146
+wan30_round25_row1 status COMPLETED elapsed_s 156
+wan30_round25_row1 done in 163.68667316436768 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round25-overlay-pipeline/clips/wan30_round25_row1.mp4

@@ -1,0 +1,17 @@
+{
+ "model": "wan30_round25_row1",
+ "row_index": 1,
+ "row_text": "I vibe-coded my app",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "payload": {
+  "prompt": "vertical 9:16 video, the frame fully filled edge to edge with no letterboxing and no padding bars at the top or bottom. wide shot, a young white woman, attractive and fashionable, with styled hair and modern stylish clothing, standing in a bright well-lit room in front of a whiteboard, fully visible from the waist up. the whiteboard beside her is completely blank and stays completely blank the entire time -- the marker never touches the board and leaves no ink, no mark, no line, nothing at all on the board surface; the board must look identical at the end of the clip as it does at the start. at the very start she looks at the camera for a moment, then turns her head to look at the whiteboard and keeps her eyes on the board and on the marker tip the entire time she is writing -- she never looks at the camera while actively writing, since no person can write accurately on a board without looking at it. she holds a black marker a few inches from the whiteboard surface, not touching it. her hand moves the marker slowly and steadily from left to right in the air just in front of the board, mimicking the motion of writing a sentence letter by letter, left to right, as if writing in cursive -- but the marker tip never makes contact with the board and no ink ever appears. her eyes stay on the whiteboard and the marker tip throughout the motion, not on the camera. only after the motion is completely finished does she turn her head back to look at the camera. the camera holds steady the entire time.",
+  "duration": 5,
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "seed": 10001
+ },
+ "request_id": "01a1a0af-d6f2-7331-950e-d1b1a02a67a7",
+ "video_url": "https://v3b.fal.media/files/b/0ab0f70b/2ZR3Hy05t18ni5278eEGS_t1jf8Z2C.mp4",
+ "generate_s": 163.68667316436768,
+ "file": "wan30_round25_row1.mp4"
+}

@@ -1,0 +1,35 @@
+6354 prompt pages in sitemap, 0 already saved, 6354 to fetch
+200/6354
+400/6354
+600/6354
+800/6354
+1000/6354
+1200/6354
+1400/6354
+1600/6354
+1800/6354
+2000/6354
+2200/6354
+2400/6354
+2600/6354
+2800/6354
+3000/6354
+3200/6354
+3400/6354
+3600/6354
+3800/6354
+4000/6354
+4200/6354
+4400/6354
+4600/6354
+4800/6354
+5000/6354
+5200/6354
+5400/6354
+5600/6354
+5800/6354
+6000/6354
+6200/6354
+done: 6352 saved, 2 errors
+ERR https://awesomevideoprompts.com/en/prompts/2041418729758572686-Happy-Tuesday⚡️ UnicodeEncodeError('ascii', 'GET /en/prompts/2041418729758572686-Happy-Tuesday⚡️ HTTP/1.1', 49, 51, 'ordinal not in range(128)')
+ERR https://awesomevideoprompts.com/en/prompts/2034593679159984212-ancient-romance-heart蛊 UnicodeEncodeError('ascii', 'GET /en/prompts/2034593679159984212-ancient-romance-heart蛊 HTTP/1.1', 57, 58, 'ordinal not in range(128)')
