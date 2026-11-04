@@ -1,0 +1,22 @@
+--- wan30_round29_row1 ('I vibe-coded my app', endpoint=alibaba/wan-3.0/text-to-video, wipe=False) ---
+wan30_round29_row1 submitted, request_id 01a1a5e4-e78a-7ee3-b251-5c82d24164ba
+wan30_round29_row1 status IN_PROGRESS elapsed_s 2
+wan30_round29_row1 status IN_PROGRESS elapsed_s 11
+wan30_round29_row1 status IN_PROGRESS elapsed_s 20
+wan30_round29_row1 status IN_PROGRESS elapsed_s 30
+wan30_round29_row1 status IN_PROGRESS elapsed_s 39
+wan30_round29_row1 status IN_PROGRESS elapsed_s 48
+wan30_round29_row1 status IN_PROGRESS elapsed_s 57
+wan30_round29_row1 status IN_PROGRESS elapsed_s 66
+wan30_round29_row1 status IN_PROGRESS elapsed_s 75
+wan30_round29_row1 status IN_PROGRESS elapsed_s 83
+wan30_round29_row1 status IN_PROGRESS elapsed_s 92
+wan30_round29_row1 status IN_PROGRESS elapsed_s 101
+wan30_round29_row1 status IN_PROGRESS elapsed_s 110
+wan30_round29_row1 status IN_PROGRESS elapsed_s 119
+wan30_round29_row1 status IN_PROGRESS elapsed_s 128
+wan30_round29_row1 status IN_PROGRESS elapsed_s 137
+wan30_round29_row1 status IN_PROGRESS elapsed_s 146
+wan30_round29_row1 status IN_PROGRESS elapsed_s 155
+wan30_round29_row1 status COMPLETED elapsed_s 165
+wan30_round29_row1 done in 171.7089819908142 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round29-smaller-font/clips/wan30_round29_row1.mp4

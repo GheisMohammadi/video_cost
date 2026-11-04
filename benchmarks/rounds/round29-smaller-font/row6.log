@@ -1,0 +1,19 @@
+--- wan30_round29_row6 ('$99 on x.country', endpoint=alibaba/wan-3.0/image-to-video, wipe=False) ---
+wan30_round29_row6 submitted, request_id 01a1a5f2-5425-7380-ba47-c2b44f269b4b
+wan30_round29_row6 status IN_PROGRESS elapsed_s 1
+wan30_round29_row6 status IN_PROGRESS elapsed_s 10
+wan30_round29_row6 status IN_PROGRESS elapsed_s 19
+wan30_round29_row6 status IN_PROGRESS elapsed_s 27
+wan30_round29_row6 status IN_PROGRESS elapsed_s 36
+wan30_round29_row6 status IN_PROGRESS elapsed_s 45
+wan30_round29_row6 status IN_PROGRESS elapsed_s 54
+wan30_round29_row6 status IN_PROGRESS elapsed_s 63
+wan30_round29_row6 status IN_PROGRESS elapsed_s 72
+wan30_round29_row6 status IN_PROGRESS elapsed_s 80
+wan30_round29_row6 status IN_PROGRESS elapsed_s 90
+wan30_round29_row6 status IN_PROGRESS elapsed_s 99
+wan30_round29_row6 status IN_PROGRESS elapsed_s 108
+wan30_round29_row6 status IN_PROGRESS elapsed_s 116
+wan30_round29_row6 status IN_PROGRESS elapsed_s 125
+wan30_round29_row6 status COMPLETED elapsed_s 134
+wan30_round29_row6 done in 138.78652095794678 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round29-smaller-font/clips/wan30_round29_row6.mp4

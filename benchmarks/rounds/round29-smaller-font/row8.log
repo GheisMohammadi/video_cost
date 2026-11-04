@@ -1,0 +1,18 @@
+--- wan30_round29_row8 ('on TikTok.', endpoint=alibaba/wan-3.0/image-to-video, wipe=False) ---
+wan30_round29_row8 submitted, request_id 01a1a5f7-1349-7923-a9ae-ed3a46d95935
+wan30_round29_row8 status IN_PROGRESS elapsed_s 1
+wan30_round29_row8 status IN_PROGRESS elapsed_s 9
+wan30_round29_row8 status IN_PROGRESS elapsed_s 18
+wan30_round29_row8 status IN_PROGRESS elapsed_s 27
+wan30_round29_row8 status IN_PROGRESS elapsed_s 37
+wan30_round29_row8 status IN_PROGRESS elapsed_s 45
+wan30_round29_row8 status IN_PROGRESS elapsed_s 54
+wan30_round29_row8 status IN_PROGRESS elapsed_s 63
+wan30_round29_row8 status IN_PROGRESS elapsed_s 72
+wan30_round29_row8 status IN_PROGRESS elapsed_s 81
+wan30_round29_row8 status IN_PROGRESS elapsed_s 90
+wan30_round29_row8 status IN_PROGRESS elapsed_s 99
+wan30_round29_row8 status IN_PROGRESS elapsed_s 108
+wan30_round29_row8 status IN_PROGRESS elapsed_s 117
+wan30_round29_row8 status COMPLETED elapsed_s 126
+wan30_round29_row8 done in 131.83923625946045 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round29-smaller-font/clips/wan30_round29_row8.mp4

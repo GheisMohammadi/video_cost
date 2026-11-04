@@ -1,0 +1,18 @@
+--- wan30_round29_row3 ('Launched; 19', endpoint=alibaba/wan-3.0/image-to-video, wipe=False) ---
+wan30_round29_row3 submitted, request_id 01a1a5ea-17bd-7352-83c7-12e620f1f005
+wan30_round29_row3 status IN_PROGRESS elapsed_s 1
+wan30_round29_row3 status IN_PROGRESS elapsed_s 9
+wan30_round29_row3 status IN_PROGRESS elapsed_s 19
+wan30_round29_row3 status IN_PROGRESS elapsed_s 28
+wan30_round29_row3 status IN_PROGRESS elapsed_s 37
+wan30_round29_row3 status IN_PROGRESS elapsed_s 46
+wan30_round29_row3 status IN_PROGRESS elapsed_s 55
+wan30_round29_row3 status IN_PROGRESS elapsed_s 64
+wan30_round29_row3 status IN_PROGRESS elapsed_s 73
+wan30_round29_row3 status IN_PROGRESS elapsed_s 82
+wan30_round29_row3 status IN_PROGRESS elapsed_s 91
+wan30_round29_row3 status IN_PROGRESS elapsed_s 99
+wan30_round29_row3 status IN_PROGRESS elapsed_s 109
+wan30_round29_row3 status IN_PROGRESS elapsed_s 118
+wan30_round29_row3 status COMPLETED elapsed_s 136
+wan30_round29_row3 done in 150.81328082084656 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round29-smaller-font/clips/wan30_round29_row3.mp4
