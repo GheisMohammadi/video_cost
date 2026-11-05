@@ -1,0 +1,20 @@
+{
+ "model": "wan30_round31_row1",
+ "row_index": 1,
+ "row_text": "I vibe-coded my app",
+ "endpoint": "alibaba/wan-3.0/text-to-video",
+ "chained_from": null,
+ "is_last_row": false,
+ "is_wipe_row": false,
+ "payload": {
+  "prompt": "vertical 9:16 video, the frame fully filled edge to edge with no letterboxing and no padding bars at the top or bottom. wide shot, a pretty young woman, standing in a bright well-lit room in front of a whiteboard, fully visible from the waist up. the whiteboard beside her is completely blank. At the start of this clip, the visible board surface has no new ink on it beyond what is already shown -- no stray marks, no partial letters, nothing floating or disconnected from the marker tip. The very first new mark of ink only begins at the exact moment the tip is already pressed against the board and already moving -- never before, never while the tip is still in the air or still being raised. at the very start she looks at the camera for a moment, then turns her head to look at the whiteboard and keeps her eyes on the board and on the marker tip for the rest of the clip -- she never looks at the camera again after this opening moment, since no person can write accurately on a board without looking at it. she holds a black marker, its tip touching the whiteboard surface. Her handwriting is small and compact -- each letter no taller than roughly a twelfth of the board's height. The entire sentence fits on a single horizontal line without wrapping to a second line and without needing to shrink mid-sentence to fit; she leaves consistent blank space below each line for the rows still to come. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position, and no part of the text ever fades in on its own; every letter is drawn by the moving tip. The tip traces out the full sentence, \"I vibe-coded my app\" letter by letter, left to right, in small cursive handwriting, staying on a single line. After the sentence is completely finished, she does not look at the camera. Instead, keeping her eyes on the board, she lifts the marker tip slightly off the board surface so it is no longer touching it, and moves her hand and the marker through the air, steadily down to a blank area of the board just below what she just wrote. While the tip is lifted and traveling through the air, it leaves no ink, no mark, no line, no trace, no retracing, and no repeating of any letter or word already on the board -- the board's existing text stays exactly as it is, completely unchanged, and absolutely no new ink of any kind appears anywhere on the board during this motion. Once her hand arrives at the blank line below, she lowers the tip to rest lightly against the board at the left edge of that blank line, touching but not pressing or dragging, so still no ink appears even at that final resting position. Her head slowly turns to follow her hand as it moves through the air, the same way a person's gaze naturally tracks their own hand -- it is not a sudden cut, it is one continuous, slow head turn following the hand's path. By the final frame of the clip, her hand and the marker tip are at rest, untouched by ink, at the left edge of that new blank line, not still at the end of the sentence she just wrote, and the blank line itself remains completely empty. the camera holds steady the entire time.",
+  "duration": 5,
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "seed": 10001
+ },
+ "request_id": "01a1ac24-6411-7e51-aa0f-a7f12f96f551",
+ "video_url": "https://v3b.fal.media/files/b/0ab14220/9tVmRLKgfe0-WnbjUa42e_d2n4hR3B.mp4",
+ "generate_s": 186.3474588394165,
+ "file": "wan30_round31_row1.mp4"
+}
