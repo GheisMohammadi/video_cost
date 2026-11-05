@@ -1,0 +1,14 @@
+wiped board region (390,90)-(720,1150) -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/raw/_chain_start_frame_row5_wiped.png
+--- wan30_round30_row5 ('So this week I pay', endpoint=alibaba/wan-3.0/image-to-video, wipe=True, last_row=False) ---
+wan30_round30_row5 submitted, request_id 01a1a88a-815a-7712-9a86-0c4b65914e7b
+wan30_round30_row5 status IN_PROGRESS elapsed_s 19
+wan30_round30_row5 status IN_PROGRESS elapsed_s 31
+wan30_round30_row5 status IN_PROGRESS elapsed_s 40
+wan30_round30_row5 status IN_PROGRESS elapsed_s 49
+wan30_round30_row5 status IN_PROGRESS elapsed_s 58
+wan30_round30_row5 status IN_PROGRESS elapsed_s 67
+wan30_round30_row5 status IN_PROGRESS elapsed_s 77
+wan30_round30_row5 status IN_PROGRESS elapsed_s 86
+wan30_round30_row5 status IN_PROGRESS elapsed_s 95
+wan30_round30_row5 status COMPLETED elapsed_s 104
+wan30_round30_row5 done in 107.91392993927002 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/clips/wan30_round30_row5.mp4

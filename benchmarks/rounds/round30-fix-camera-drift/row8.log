@@ -1,0 +1,18 @@
+denoised /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/raw/_chain_start_frame_row8_raw.png -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/raw/_chain_start_frame_row8_denoised.png
+--- wan30_round30_row8 ('on TikTok.', endpoint=alibaba/wan-3.0/image-to-video, wipe=False, last_row=True) ---
+wan30_round30_row8 submitted, request_id 01a1ab0f-0b7d-75d1-8ad5-a2c80977ca38
+wan30_round30_row8 status IN_PROGRESS elapsed_s 1
+wan30_round30_row8 status IN_PROGRESS elapsed_s 10
+wan30_round30_row8 status IN_PROGRESS elapsed_s 19
+wan30_round30_row8 status IN_PROGRESS elapsed_s 28
+wan30_round30_row8 status IN_PROGRESS elapsed_s 37
+wan30_round30_row8 status IN_PROGRESS elapsed_s 46
+wan30_round30_row8 status IN_PROGRESS elapsed_s 54
+wan30_round30_row8 status IN_PROGRESS elapsed_s 63
+wan30_round30_row8 status IN_PROGRESS elapsed_s 72
+wan30_round30_row8 status IN_PROGRESS elapsed_s 81
+wan30_round30_row8 status IN_PROGRESS elapsed_s 91
+wan30_round30_row8 status IN_PROGRESS elapsed_s 100
+wan30_round30_row8 status IN_PROGRESS elapsed_s 109
+wan30_round30_row8 status COMPLETED elapsed_s 120
+wan30_round30_row8 done in 124.35780501365662 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/clips/wan30_round30_row8.mp4

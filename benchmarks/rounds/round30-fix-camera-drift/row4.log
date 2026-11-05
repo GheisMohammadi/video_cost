@@ -1,0 +1,16 @@
+--- wan30_round30_row4 ('signed up.', endpoint=alibaba/wan-3.0/image-to-video, wipe=False, last_row=False) ---
+wan30_round30_row4 submitted, request_id 01a1a886-6557-74a1-a9a7-30394d4117e4
+wan30_round30_row4 status IN_PROGRESS elapsed_s 3
+wan30_round30_row4 status IN_PROGRESS elapsed_s 12
+wan30_round30_row4 status IN_PROGRESS elapsed_s 21
+wan30_round30_row4 status IN_PROGRESS elapsed_s 31
+wan30_round30_row4 status IN_PROGRESS elapsed_s 41
+wan30_round30_row4 status IN_PROGRESS elapsed_s 50
+wan30_round30_row4 status IN_PROGRESS elapsed_s 60
+wan30_round30_row4 status IN_PROGRESS elapsed_s 70
+wan30_round30_row4 status IN_PROGRESS elapsed_s 80
+wan30_round30_row4 status IN_PROGRESS elapsed_s 89
+wan30_round30_row4 status IN_PROGRESS elapsed_s 98
+wan30_round30_row4 status IN_PROGRESS elapsed_s 106
+wan30_round30_row4 status COMPLETED elapsed_s 125
+wan30_round30_row4 done in 139.75315356254578 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/clips/wan30_round30_row4.mp4

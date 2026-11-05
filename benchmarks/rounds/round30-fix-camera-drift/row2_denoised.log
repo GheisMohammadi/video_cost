@@ -1,0 +1,18 @@
+denoised /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/raw/_chain_start_frame_row2_raw.png -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/raw/_chain_start_frame_row2_denoised.png
+--- wan30_round30_row2 ('in a weekend.', endpoint=alibaba/wan-3.0/image-to-video, wipe=False, last_row=False) ---
+wan30_round30_row2 submitted, request_id 01a1aaff-769d-73f1-bf78-59038ca289de
+wan30_round30_row2 status IN_PROGRESS elapsed_s 2
+wan30_round30_row2 status IN_PROGRESS elapsed_s 11
+wan30_round30_row2 status IN_PROGRESS elapsed_s 20
+wan30_round30_row2 status IN_PROGRESS elapsed_s 28
+wan30_round30_row2 status IN_PROGRESS elapsed_s 37
+wan30_round30_row2 status IN_PROGRESS elapsed_s 46
+wan30_round30_row2 status IN_PROGRESS elapsed_s 55
+wan30_round30_row2 status IN_PROGRESS elapsed_s 64
+wan30_round30_row2 status IN_PROGRESS elapsed_s 73
+wan30_round30_row2 status IN_PROGRESS elapsed_s 82
+wan30_round30_row2 status IN_PROGRESS elapsed_s 91
+wan30_round30_row2 status IN_PROGRESS elapsed_s 100
+wan30_round30_row2 status IN_PROGRESS elapsed_s 109
+wan30_round30_row2 status COMPLETED elapsed_s 118
+wan30_round30_row2 done in 124.48634076118469 s -> /Users/gheis/notes/video_generation/benchmarks/rounds/round30-fix-camera-drift/clips/wan30_round30_row2.mp4

@@ -1,0 +1,20 @@
+{
+ "model": "wan30_round30_row7",
+ "row_index": 7,
+ "row_text": "to grow my business",
+ "endpoint": "alibaba/wan-3.0/image-to-video",
+ "chained_from": "clips/wan30_round30_row6.mp4",
+ "wipe_handoff": false,
+ "is_last_row": false,
+ "payload": {
+  "prompt": "continuing from this exact frame -- same woman, same outfit, same whiteboard, same room, same camera framing, nothing changes about the scene itself. Her face, age, and features do not change from the start of the clip to the end -- the exact same person throughout, no drift in her appearance. she is still holding the black marker. she now moves the marker tip to a blank area of the board below her previous writing and begins a new row of text. Do not repeat, continue, retrace, or reuse any part of the text already written on the board. The only new text written in this clip is the sentence \"to grow my business\" -- write exactly that and nothing else. At the start of this clip, the visible board surface has no new ink on it beyond what is already shown -- no stray marks, no partial letters, nothing floating or disconnected from the marker tip. The very first new mark of ink only begins at the exact moment the tip is already pressed against the board and already moving -- never before, never while the tip is still in the air or still being raised. Her handwriting is small and compact -- each letter no taller than roughly a twelfth of the board's height. The entire sentence fits on a single horizontal line without wrapping to a second line and without needing to shrink mid-sentence to fit; she leaves consistent blank space below each line for the rows still to come. the marker tip moves slowly and steadily from left to right across the board, and a single continuous line of black ink trail appears exactly where the tip has physically touched, one letter forming at a time, following the tip precisely -- no ink or text ever appears ahead of or away from the tip's current position, and no part of the text ever fades in on its own; every letter is drawn by the moving tip. The tip traces out the full sentence, \"to grow my business\" letter by letter, left to right, in small cursive handwriting, staying on a single line, in the same handwriting style and size as the text already on the board. Her eyes stay on the whiteboard and the marker tip for the entire clip, start to finish. She does not look at the camera at any point in this clip, not even after the sentence is finished -- she keeps looking at the board. the camera holds steady the entire time.",
+  "duration": 5,
+  "resolution": "720p",
+  "aspect_ratio": "9:16",
+  "seed": 10001
+ },
+ "request_id": "01a1ab0c-a724-7772-a353-c8bdb18a8296",
+ "video_url": "https://v3b.fal.media/files/b/0ab13af0/Xe5J8-McpjOasH45t3u2n_mPwOGUao.mp4",
+ "generate_s": 122.443363904953,
+ "file": "wan30_round30_row7.mp4"
+}
