@@ -1,0 +1,14 @@
+{
+ "tool": "seedance",
+ "endpoint": "bytedance/seedance-2.0/fast/text-to-video",
+ "payload": {
+  "prompt": "A realistic, continuous 10-second video of a young Asian woman presenting a technical diagram on a transparent glass writing board against a matte black background.\n\nThe woman wears a plain black T-shirt and blue jeans. She holds a bright neon-yellow marker in her right hand. The camera is fixed, medium-wide shot, straight-on perspective, professional studio lighting.\n\nSeveral small, neatly arranged technical labels and boxes are already visible on the board, representing a simple software architecture diagram.\n\nDrawing sequence:\n\n1. The woman looks at the diagram and raises her right hand, positioning the yellow marker tip at a point near the top of the board.\n2. She touches the glass with the marker and slowly draws a perfectly straight vertical yellow line downward, approximately 20 centimeters long.\n3. The yellow line appears progressively, exactly underneath the moving marker tip. The line must not appear ahead of the marker.\n4. She lifts the marker, moves her hand to another position, and draws a straight horizontal yellow line connecting two existing boxes.\n5. She then draws two short diagonal lines, forming a simple branching connection from one upper box to two lower boxes.\n6. She lifts the marker, lowers her hand, and looks toward the camera. The completed diagram remains visible and unchanged.\n\nCritical physical and temporal consistency requirements:\n\n- Every line is created by actual physical contact between the marker tip and the glass.\n- The marker tip and the growing endpoint of each line must remain perfectly synchronized, frame by frame.\n- Lines must grow continuously from their starting point to their endpoint, following the exact trajectory of the marker.\n- No line may appear before the marker reaches its location.\n- No floating strokes, teleporting lines, disappearing segments, or spontaneous diagram changes.\n- Previously drawn lines must remain perfectly stationary and geometrically identical throughout the video.\n- The marker stays firmly and naturally gripped between the woman's fingers.\n- Her wrist, fingers, elbow, and arm move with realistic human anatomy.\n- No camera cuts, zooms, transitions, time-lapses, or editing tricks.\n- Maintain consistent line thickness, neon-yellow color, and sharp edges.\n- Natural hand speed with brief pauses between strokes.\n\nPhotorealistic, single continuous take, 30 fps, high temporal consistency, realistic marker-to-surface interaction, crisp geometric lines, no animation overlays, no post-production drawing effects.",
+  "duration": "10",
+  "aspect_ratio": "16:9",
+  "resolution": "720p"
+ },
+ "request_id": "01a1ad0c-6dc9-7ff0-ac79-4d2ab15d1d01",
+ "video_url": "https://v3b.fal.media/files/b/0ab14815/WnVTHQgTKfIH6ObPsnjkG_video.mp4",
+ "generate_s": 224.21507596969604,
+ "file": "round32_seedance.mp4"
+}

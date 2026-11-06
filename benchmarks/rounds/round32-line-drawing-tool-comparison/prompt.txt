@@ -1,0 +1,30 @@
+A realistic, continuous 10-second video of a young Asian woman presenting a technical diagram on a transparent glass writing board against a matte black background.
+
+The woman wears a plain black T-shirt and blue jeans. She holds a bright neon-yellow marker in her right hand. The camera is fixed, medium-wide shot, straight-on perspective, professional studio lighting.
+
+Several small, neatly arranged technical labels and boxes are already visible on the board, representing a simple software architecture diagram.
+
+Drawing sequence:
+
+1. The woman looks at the diagram and raises her right hand, positioning the yellow marker tip at a point near the top of the board.
+2. She touches the glass with the marker and slowly draws a perfectly straight vertical yellow line downward, approximately 20 centimeters long.
+3. The yellow line appears progressively, exactly underneath the moving marker tip. The line must not appear ahead of the marker.
+4. She lifts the marker, moves her hand to another position, and draws a straight horizontal yellow line connecting two existing boxes.
+5. She then draws two short diagonal lines, forming a simple branching connection from one upper box to two lower boxes.
+6. She lifts the marker, lowers her hand, and looks toward the camera. The completed diagram remains visible and unchanged.
+
+Critical physical and temporal consistency requirements:
+
+- Every line is created by actual physical contact between the marker tip and the glass.
+- The marker tip and the growing endpoint of each line must remain perfectly synchronized, frame by frame.
+- Lines must grow continuously from their starting point to their endpoint, following the exact trajectory of the marker.
+- No line may appear before the marker reaches its location.
+- No floating strokes, teleporting lines, disappearing segments, or spontaneous diagram changes.
+- Previously drawn lines must remain perfectly stationary and geometrically identical throughout the video.
+- The marker stays firmly and naturally gripped between the woman's fingers.
+- Her wrist, fingers, elbow, and arm move with realistic human anatomy.
+- No camera cuts, zooms, transitions, time-lapses, or editing tricks.
+- Maintain consistent line thickness, neon-yellow color, and sharp edges.
+- Natural hand speed with brief pauses between strokes.
+
+Photorealistic, single continuous take, 30 fps, high temporal consistency, realistic marker-to-surface interaction, crisp geometric lines, no animation overlays, no post-production drawing effects.
