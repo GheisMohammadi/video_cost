@@ -1,0 +1,36 @@
+A realistic, continuous 10-second video of a young Asian woman presenting a technical diagram on a transparent glass writing board against a matte black background.
+
+The woman wears a plain black T-shirt and blue jeans. She holds a bright neon-yellow marker in her right hand. The camera is fixed, medium-wide shot, straight-on perspective, professional studio lighting.
+
+The board already shows exactly five boxes, each containing a single bold letter, arranged in a fixed layout with generous empty space between them:
+- Box "A" is near the top, horizontally centered.
+- Box "B" is at middle height, on the left side.
+- Box "C" is at middle height, on the right side, directly across from Box "B".
+- Box "D" is near the bottom, on the left side, directly below Box "B".
+- Box "E" is near the bottom, on the right side, directly below Box "C".
+There is a single empty point exactly midway between Box "B" and Box "C", with no box there -- call this the "hub point". No lines exist yet; only the five labeled boxes are visible.
+
+Drawing sequence, in this exact order:
+
+1. She looks at Box "A", raises her right hand, and positions the marker tip at the bottom edge of Box "A".
+2. She draws a perfectly straight vertical yellow line starting at the bottom edge of Box "A" and going straight down, ending exactly at the hub point (about 20 cm long). The line appears progressively, exactly underneath the moving marker tip, never ahead of it.
+3. She lifts the marker, moves her hand to the right edge of Box "B", and draws a perfectly straight horizontal yellow line starting at the right edge of Box "B", passing through the hub point, and ending exactly at the left edge of Box "C".
+4. She lifts the marker, returns to the hub point, and draws a straight diagonal yellow line from the hub point down and to the left, ending exactly at the top edge of Box "D".
+5. She lifts the marker, returns to the hub point again, and draws a straight diagonal yellow line from the hub point down and to the right, ending exactly at the top edge of Box "E".
+6. She lifts the marker, lowers her hand, and looks toward the camera. The completed diagram -- one vertical line, one horizontal line, and two diagonal lines, all meeting exactly at the hub point between Box B and Box C -- remains visible and unchanged.
+
+Critical physical and temporal consistency requirements:
+
+- Every line is created by actual physical contact between the marker tip and the glass.
+- The marker tip and the growing endpoint of each line stay perfectly synchronized, frame by frame.
+- Lines grow continuously from their stated start point to their stated end point, following a straight trajectory -- never curved, never wavy.
+- No line may appear before the marker reaches its location, and no line may connect to a box other than the one named for it above.
+- No floating strokes, teleporting lines, disappearing segments, or spontaneous diagram changes.
+- Previously drawn lines and the five boxes stay perfectly stationary and geometrically identical throughout.
+- The five box labels ("A", "B", "C", "D", "E") are single bold letters only, rendered once at the start and never redrawn or altered.
+- The marker stays firmly and naturally gripped between her fingers; her wrist, fingers, elbow, and arm move with realistic human anatomy.
+- No camera cuts, zooms, transitions, time-lapses, or editing tricks.
+- Consistent line thickness, neon-yellow color, and sharp edges.
+- Natural hand speed with brief pauses between strokes.
+
+Photorealistic, single continuous take, 30 fps, high temporal consistency, realistic marker-to-surface interaction, crisp geometric lines, no animation overlays, no post-production drawing effects.

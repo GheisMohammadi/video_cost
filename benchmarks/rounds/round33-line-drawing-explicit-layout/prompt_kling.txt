@@ -1,0 +1,25 @@
+A realistic, continuous 10-second video: a young Asian woman presents a diagram on a transparent glass board, matte black background. Black T-shirt, blue jeans, bright neon-yellow marker in her right hand. Fixed camera, medium-wide, straight-on, studio lighting.
+
+Board already shows 5 boxes, each with one bold letter, fixed layout, generous empty space between them: "A" near top centered; "B" mid-height left; "C" mid-height right, across from B; "D" near bottom left, below B; "E" near bottom right, below C. An empty "hub point" sits exactly midway between B and C, no box there. No lines exist yet.
+
+Drawing sequence, exact order:
+
+1. She looks at Box A, raises her hand, positions the marker tip at A's bottom edge.
+2. Draws a straight vertical yellow line from A's bottom edge straight down to the hub point (~20cm). Line appears progressively under the moving tip, never ahead of it.
+3. Lifts marker, moves to B's right edge, draws a straight horizontal yellow line from B's right edge, through the hub point, to C's left edge.
+4. Lifts marker, returns to the hub point, draws a straight diagonal line from the hub point down-left to D's top edge.
+5. Lifts marker, returns to the hub point, draws a straight diagonal line from the hub point down-right to E's top edge.
+6. Lifts marker, lowers hand, looks at camera. The finished diagram -- vertical, horizontal, and two diagonals meeting exactly at the hub point between B and C -- stays visible and unchanged.
+
+Critical requirements:
+- Every line is real marker-to-glass contact; tip and growing line-end stay perfectly synced frame by frame.
+- Lines are straight, never curved, growing only from stated start to stated end point.
+- No line appears before the marker reaches it; no line connects to the wrong box.
+- No floating strokes, teleporting lines, disappearing segments, spontaneous changes.
+- Previously drawn lines and the five boxes stay perfectly stationary throughout.
+- Box labels are single bold letters only, drawn once, never redrawn or altered.
+- Marker stays naturally gripped; wrist, fingers, elbow, arm move with realistic anatomy.
+- No camera cuts, zooms, transitions, or time-lapses.
+- Consistent line thickness, neon-yellow color, sharp edges. Natural hand speed, brief pauses between strokes.
+
+Photorealistic, single continuous take, 30fps, high temporal consistency, realistic marker-to-surface interaction, crisp geometric lines, no animation overlays, no post-production drawing effects.
