@@ -1,0 +1,18 @@
+{
+ "step": 2,
+ "kind": "text",
+ "endpoint": "bytedance/seedance-2.0/mini/image-to-video",
+ "chained_from": "clips/round38_step1.mp4",
+ "is_last_step": false,
+ "payload": {
+  "prompt": "Continuing from this exact frame -- same woman, same outfit, same glass board, same room, same camera framing, nothing changes about the scene itself. Her face, age, and features do not change from the start of the clip to the end -- the exact same person throughout. The glass is perfectly clear with no reflection of her, no mirrored double, no ghost image, and no second figure visible anywhere in or behind the glass -- only one woman is ever visible in the frame, at the center, and the area behind and beside the glass is plain matte black with nothing else in it. There may already be a short faint mark at the marker tip's current position. That mark is not text and is not something to preserve, continue, or write around -- whatever is drawn in this clip begins fresh at that position, entirely independent of that mark. She never retraces, repeats, or redraws any word or mark already on the board -- only the new stroke described for this clip is added. Ink only appears exactly underneath the moving marker tip, one stroke at a time, never ahead of the tip, never appearing all at once or partially formed before the tip draws it. Her handwriting is small and compact, staying on a single horizontal line without wrapping to a second line. She writes exactly this new text directly below the first line of text already on the board, in the same handwriting style and size as the text already there: \"in a weekend. Launched 19.\" -- reproduced exactly, character for character, with no extra punctuation of any kind added anywhere. \"$99\" is written as a dollar sign followed directly by the two digits \"9\" and \"9\" with no period, space, or extra digit between them. \"x.country\" is written with a period between \"x\" and \"country\", never a hyphen or dash, and with a lowercase \"x\". After this clip's stroke is completely finished, she does not look at the camera. Keeping her eyes on the board, she lifts the marker tip slightly off the glass so it leaves no ink, and moves her hand steadily through the air to a blank position directly below this line, at its left edge, ready to begin the next line of text, her head slowly turning to follow her hand the whole way -- one continuous, slow motion, not a cut. By the final frame of this clip, her hand and the marker tip are at rest at that new position, ready for the next stroke, not still at the position where this clip's stroke ended. The camera holds steady the entire time.",
+  "duration": "5",
+  "aspect_ratio": "16:9",
+  "resolution": "720p",
+  "seed": 20001
+ },
+ "request_id": "01a1c657-73f9-7a41-831e-9c1bee5fdaf9",
+ "video_url": "https://v3b.fal.media/files/b/0ab1edcf/DH9rnRUgqpLyVIY6cvhaJ_video.mp4",
+ "generate_s": 147.0724799633026,
+ "file": "round38_step2.mp4"
+}
