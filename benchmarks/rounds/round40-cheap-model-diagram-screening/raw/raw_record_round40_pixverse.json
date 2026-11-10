@@ -1,0 +1,14 @@
+{
+ "tool": "pixverse",
+ "endpoint": "fal-ai/pixverse/v6/text-to-video",
+ "payload": {
+  "prompt": "A realistic, continuous 5-second video: a young Asian woman presents a diagram on a transparent glass board, matte black background. Black T-shirt, blue jeans, bright neon-yellow marker in her right hand. Fixed camera, medium-wide, straight-on, studio lighting.\n\nBoard already shows 5 boxes, each with one bold letter, fixed layout: \"A\" near top centered; \"B\" mid-height left; \"C\" mid-height right, across from B; \"D\" near bottom left, below B; \"E\" near bottom right, below C. An empty \"hub point\" sits exactly midway between B and C, no box there. No lines exist yet.\n\nDrawing sequence, exact order:\n1. She positions the marker tip at A's bottom edge.\n2. Draws a straight vertical yellow line from A's bottom edge straight down to the hub point. Line appears progressively under the moving tip, never ahead of it.\n3. Moves to B's right edge, draws a straight horizontal yellow line from B's right edge, through the hub point, to C's left edge.\n4. Returns to the hub point, draws a straight diagonal line from the hub point down-left to D's top edge.\n5. Returns to the hub point, draws a straight diagonal line from the hub point down-right to E's top edge.\n6. Looks at camera. Finished diagram -- vertical, horizontal, and two diagonals meeting exactly at the hub point between B and C -- stays visible and unchanged.\n\nRequirements: every line is real marker-to-glass contact, tip and growing line-end stay perfectly synced frame by frame. Lines are straight, never curved. No line appears before the marker reaches it; no line connects to the wrong box. No floating strokes, teleporting lines, or spontaneous changes. Previously drawn lines and the five boxes stay perfectly stationary throughout. Box labels are single bold letters only, drawn once, never redrawn. No camera cuts, zooms, or transitions. Consistent line thickness, neon-yellow color, sharp edges.\n\nPhotorealistic, single continuous take, 30fps, high temporal consistency, crisp geometric lines, no animation overlays.",
+  "duration": 5,
+  "aspect_ratio": "16:9",
+  "resolution": "720p"
+ },
+ "request_id": "01a1c69d-54d8-77d2-9d70-89d2e227fc61",
+ "video_url": "https://v3b.fal.media/files/b/0ab1ef91/7xtYgcORk7YgXGe3FluQk_output.mp4",
+ "generate_s": 67.82173895835876,
+ "file": "round40_pixverse.mp4"
+}

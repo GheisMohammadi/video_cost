@@ -1,0 +1,16 @@
+A realistic, continuous 15-second video: a young Asian woman writes and annotates text on a transparent glass board, matte black background. Black T-shirt, blue jeans, bright neon-yellow marker in her right hand. Fixed camera, medium-wide, straight-on, studio lighting. Board blank at start. Glass is perfectly clear -- no reflection of her, no mirrored double, no ghost image, no second figure anywhere; exactly one woman visible throughout.
+
+She writes exactly four short lines, top to bottom, left-aligned, generous blank space between them, small compact handwriting staying on one line each, never wrapping:
+1. "I vibe-coded my app"
+2. "in a weekend. Launched 19."
+3. "So this week I pay"
+4. "$99 on x.country"
+Each line reproduced exactly, character for character, no extra punctuation anywhere. "$99" is a dollar sign then "9" "9", no period or extra digit. "x.country" has a period between "x" and "country", lowercase x, never a hyphen.
+
+Order: write line 1, lift, write line 2 below it, lift, write line 3, lift, write line 4. Ink appears only under the moving tip, never ahead, never all at once. Marker lifts the instant a line finishes -- no stray mark after any line.
+
+Then: draw a closed rectangle tightly around "vibe-coded" (line 1), four strokes growing under the tip. Then a closed circle tightly around "$99" (line 4), one curved stroke. Then one straight line under "x.country" (line 4) only, matching only that word's width.
+
+Every stroke stops right at its endpoint -- no overshoot, no arrowhead. Prior text/marks stay stationary, never redrawn. Her face never changes. She looks at the board throughout, camera only at the very end. No cuts or zooms. Consistent yellow line thickness, sharp edges.
+
+Photorealistic, single continuous take, 30fps, high temporal consistency, no animation overlays.
