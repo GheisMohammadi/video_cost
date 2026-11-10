@@ -1,0 +1,47 @@
+[
+  {
+    "id": "calibrate",
+    "title": "Start with the recording",
+    "audience": "Calibration engineer",
+    "lines": [
+      "Before you retrain, check the alignment.",
+      "Do the camera and lidar agree about where that object is?",
+      "Deepen AI can calibrate from an eligible recording you already have.",
+      "Compare the before-and-after report. Start with the evidence."
+    ],
+    "evidence": "A real approved sensor overlay and calibration report. Do not manufacture a successful calibration or imply every recording qualifies.",
+    "cta": "Check a recording at targetless.deepen.ai.",
+    "beats": "0–2s: visible misalignment / hook. 2–8s: compare one object in the same frame. 8–15s: the existing recording and scoped workflow. 15–21s: approved report and one next step.",
+    "word_count": 38
+  },
+  {
+    "id": "buyer",
+    "title": "Before you collect more",
+    "audience": "Robotics founder / ML lead",
+    "lines": [
+      "Before you collect more robot data, check what already exists.",
+      "The useful question is whether it fits your task, sensors, and rights.",
+      "On Deepen Refinery, inspect samples and formats before choosing a dataset.",
+      "Start with fit, then decide what to collect."
+    ],
+    "evidence": "An actual cleared Refinery listing and its samples. No invented collection cost, catalog total or guaranteed model gain.",
+    "cta": "Explore dataset fit through Deepen Refinery.",
+    "beats": "0–2s: task/demo footage / hook. 2–8s: the missing task or condition. 8–15s: real sample, format and usage-rights views. 15–22s: next step for buyers.",
+    "word_count": 41
+  },
+  {
+    "id": "owner",
+    "title": "A second use for a recording",
+    "audience": "Lab / fleet / data owner",
+    "lines": [
+      "That recording may have value beyond the original project.",
+      "First, check what your team owns and what it can license.",
+      "Deepen Refinery lets suppliers define licensing terms and retain ownership.",
+      "Explore the supplier route. Useful data deserves a second look."
+    ],
+    "evidence": "Client-approved supplier workflow and rights language. Confirm eligibility for the depicted owner. No fabricated sale, payout or earnings claim.",
+    "cta": "Explore supplying data through Deepen Refinery.",
+    "beats": "0–2s: an existing session on a drive / hook. 2–8s: ownership and permitted reuse. 8–15s: cleared listing/rights workflow. 15–22s: supplier next step.",
+    "word_count": 40
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "engineer",
+    "label": "Calibration engineer",
+    "question": "Can we trust this alignment?",
+    "hook": "Before you retrain, check the alignment.",
+    "evidence": "A cleared before/after overlay and the rig-specific report.",
+    "next": "Check an existing recording",
+    "url": "https://targetless.deepen.ai/",
+    "behavior": "Pause the same frame, compare the sensor views, and name one observable discrepancy."
+  },
+  {
+    "id": "buyer",
+    "label": "Data buyer / ML lead",
+    "question": "Do we really need to collect this again?",
+    "hook": "Before you collect more, inspect what already exists.",
+    "evidence": "Real listing samples, task coverage, formats and license terms.",
+    "next": "Explore Refinery data",
+    "url": "https://www.deepen.ai/refinery/",
+    "behavior": "Show the task fit and limits before discussing volume. Ask what is missing from the buyer’s dataset."
+  },
+  {
+    "id": "owner",
+    "label": "Data owner / lab / fleet",
+    "question": "Could this dataset be useful to another team?",
+    "hook": "That recording may have value beyond the original project.",
+    "evidence": "An approved listing, ownership scope and actual licensing controls.",
+    "next": "Explore supplying data",
+    "url": "https://www.deepen.ai/refinery/",
+    "behavior": "Discuss permissions, reuse and buyer fit. Never imply guaranteed earnings or universal seller eligibility."
+  }
+]

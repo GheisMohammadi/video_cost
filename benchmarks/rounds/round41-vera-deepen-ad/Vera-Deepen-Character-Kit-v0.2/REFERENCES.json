@@ -1,0 +1,42 @@
+{
+  "version": "0.2",
+  "references": [
+    {
+      "file": "assets/vera-portrait-v01.png",
+      "preview": "assets/portrait.jpg",
+      "role": "Proposed identity anchor; client approval pending",
+      "sha256": "44d26e4d43551386fc118260647b39b9b3f2fa4031f3586c3593dfcc525a1115",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "generation": "Built-in image generation; exact per-image price not exposed",
+      "status": "review_candidate"
+    },
+    {
+      "file": "assets/vera-workbench-v02.png",
+      "preview": "assets/workbench.jpg",
+      "role": "Look/scene study only; do not promote into an identity master",
+      "sha256": "e897ddb89e57cb0c94057adcb354225021b818469b6578887de4659bea0ee849",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "generation": "Built-in image generation; exact per-image price not exposed",
+      "status": "review_candidate"
+    },
+    {
+      "file": "assets/vera-test-floor-v01.png",
+      "preview": "assets/test-floor.jpg",
+      "role": "Look/scene study only; do not promote into an identity master",
+      "sha256": "714f8d1b451511b1ff603207e132d2359bdeec2fc0ccb40000fd8c19a28b23d3",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "generation": "Built-in image generation; exact per-image price not exposed",
+      "status": "review_candidate"
+    }
+  ],
+  "all_images": "Illustrative generated character/scene studies, not real staff, customers or Deepen product captures."
+}

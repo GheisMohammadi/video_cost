@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-09",
+  "primary_sources": [
+    {
+      "id": "targetless",
+      "title": "Deepen Calibrate — current targetless product and pricing",
+      "url": "https://targetless.deepen.ai/",
+      "support": "An eligible existing recording; no prescribed figure-eight. Current self-serve scope and offer are distinct from enterprise calibration."
+    },
+    {
+      "id": "refinery",
+      "title": "Deepen Refinery — marketplace",
+      "url": "https://www.deepen.ai/refinery/",
+      "support": "Dataset previews, formats, samples and usage rights; separate buyer, seller and partner entry points."
+    },
+    {
+      "id": "robotics",
+      "title": "Deepen AI — Robotics and Embodied AI",
+      "url": "https://www.deepen.ai/solutions-robotics/",
+      "support": "Calibration, 3D annotation and validation across robot perception and action."
+    },
+    {
+      "id": "cmu",
+      "title": "Carnegie Mellon Robotics Institute — Robotics PhD",
+      "url": "https://www.ri.cmu.edu/education/academic-programs/doctoral-robotics-program/",
+      "support": "The real program is a PhD in Robotics. It does not establish an affiliation for this fictional host."
+    }
+  ],
+  "internal_research": "The original X teardown and internal analytics are not distributed in this public kit. Its creative recommendations are inputs, not publishing or spending authorization."
+}

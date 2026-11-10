@@ -1,0 +1,43 @@
+{
+  "checked": "2026-11-09",
+  "publication_use": "Recheck current product scope and client-approved evidence before a campaign. Keep this separate from personality.",
+  "facts": [
+    {
+      "claim": "Targetless can use an eligible existing recording; no prescribed figure-eight.",
+      "source": "https://targetless.deepen.ai/",
+      "status": "verified_public_page"
+    },
+    {
+      "claim": "Current self-serve launch pricing is$150 for LiDAR–camera extrinsics; other stack/parameter work uses an engagement.",
+      "source": "https://targetless.deepen.ai/",
+      "expires": "2026-12-31",
+      "status": "verified_public_page; not a permanent persona promise"
+    },
+    {
+      "claim": "Refinery supports reviewing samples/formats/usage rights and separate buyer/seller/partner paths.",
+      "source": "https://www.deepen.ai/refinery/",
+      "status": "verified_public_page"
+    },
+    {
+      "claim": "Supplier ownership and licensing terms are distinct from guaranteed earnings.",
+      "source": "https://www.deepen.ai/refinery/",
+      "status": "verified_public_page"
+    }
+  ],
+  "campaign_checks": [
+    "Client-cleared actual product/data captures",
+    "Definition and scope for any accuracy or repeatability number",
+    "Current sensor/package eligibility",
+    "Supplier eligibility and any competitor-blocking, anonymity or payout specifics",
+    "Exact approved safety/partner statements",
+    "Catalog totals and dataset-scope definitions"
+  ],
+  "not_default_claims": [
+    "All sensors for the self-serve price",
+    "A required figure-eight capture",
+    "A universal accuracy guarantee",
+    "Guaranteed supplier income",
+    "CMU or NVIDIA endorsement of Vera",
+    "Calibration or scenario coverage alone proves a robot safe"
+  ]
+}

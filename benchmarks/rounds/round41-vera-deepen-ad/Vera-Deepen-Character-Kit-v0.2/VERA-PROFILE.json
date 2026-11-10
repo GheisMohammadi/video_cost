@@ -1,0 +1,74 @@
+{
+  "host_id": "vera-deepen-v0.2",
+  "name": "Vera",
+  "name_status": "Working name used by Zi",
+  "client": "Deepen AI",
+  "version": "0.2",
+  "character_type": "AI-created fictional technical explainer",
+  "approval_status": "Client review pending",
+  "age": "Late twenties; proposed range28–30",
+  "designed_background": "Fictional CMU PhD in Robotics with an AI/perception/robot-learning focus",
+  "verified_affiliations": [],
+  "core_job": "Make physical-AI data problems observable and choose one useful next check",
+  "face_anchor": "assets/vera-portrait-v01.png",
+  "face_anchor_sha256": "44d26e4d43551386fc118260647b39b9b3f2fa4031f3586c3593dfcc525a1115",
+  "face_anchor_approved": false,
+  "voice": {
+    "selected": false,
+    "voice_sample_id": null,
+    "direction": "Adult lower-middle American English; rounded resonance, connected phrases, evidence-motivated changes of emphasis. Slightly firmer conversational center. No generated audio in this kit."
+  },
+  "provider_bindings": {
+    "person_id": null,
+    "may_overwrite_claire": false
+  },
+  "accessories": {
+    "watch": "Black nylon strap on anatomical LEFT",
+    "right_wrist": "Bare",
+    "earrings": "Tiny matte silver studs",
+    "hair_clip": "Small separate clip for the half-up look",
+    "glasses": "Round graphite clear-lens frames, optional"
+  },
+  "spoken_brand": "Deepen AI",
+  "CTA_policy": "One audience-relevant next step; do not automatically inherit Claire’s AI Foundry closer",
+  "identity_policy": "Keep the new Vera anchor stable. Scene and wardrobe studies do not authorize new anatomy changes.",
+  "references": [
+    {
+      "file": "assets/vera-portrait-v01.png",
+      "preview": "assets/portrait.jpg",
+      "role": "Proposed identity anchor; client approval pending",
+      "sha256": "44d26e4d43551386fc118260647b39b9b3f2fa4031f3586c3593dfcc525a1115",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "generation": "Built-in image generation; exact per-image price not exposed",
+      "status": "review_candidate"
+    },
+    {
+      "file": "assets/vera-workbench-v02.png",
+      "preview": "assets/workbench.jpg",
+      "role": "Look/scene study only; do not promote into an identity master",
+      "sha256": "e897ddb89e57cb0c94057adcb354225021b818469b6578887de4659bea0ee849",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "generation": "Built-in image generation; exact per-image price not exposed",
+      "status": "review_candidate"
+    },
+    {
+      "file": "assets/vera-test-floor-v01.png",
+      "preview": "assets/test-floor.jpg",
+      "role": "Look/scene study only; do not promote into an identity master",
+      "sha256": "714f8d1b451511b1ff603207e132d2359bdeec2fc0ccb40000fd8c19a28b23d3",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "generation": "Built-in image generation; exact per-image price not exposed",
+      "status": "review_candidate"
+    }
+  ],
+  "production_authority": "No video, voice save, identity lock or order cap authorized by this kit."
+}

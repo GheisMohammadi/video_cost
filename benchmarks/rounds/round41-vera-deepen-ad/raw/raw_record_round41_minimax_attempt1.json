@@ -1,0 +1,14 @@
+{
+ "tool": "minimax",
+ "endpoint": "minimax/h3-max-turbo/image-to-video",
+ "payload": {
+  "prompt": "A realistic, continuous 15-second video: the woman from the reference image (dark bob just past the collarbone, thin round graphite glasses, pale-blue stand-collar shirt with turned cuffs, charcoal trousers, tiny matte silver stud earrings, black nylon-strap watch on her left wrist, bare right wrist) writes and annotates text on a transparent glass board, matte black background. Bright neon-yellow marker in her right hand. Fixed camera, medium-wide, straight-on, studio lighting. Board blank at start. Glass is perfectly clear -- no reflection of her, no mirrored double, no ghost image, no second figure anywhere; exactly one woman visible throughout. Her face, hair, glasses and wardrobe match the reference image exactly and do not change during the clip.\n\nShe writes exactly four short lines, top to bottom, left-aligned, generous blank space between them, small compact handwriting staying on one line each, never wrapping:\n1. \"Human-in-the-loop review\"\n2. \"for AI in production.\"\n3. \"Pay $5 per person-hour.\"\n4. \"https://services.deepen.ai\"\nEach line reproduced exactly, character for character. \"$5\" is a dollar sign then \"5\", no period or extra digit. The URL is exactly \"https://services.deepen.ai\", all lowercase, with a period before \"ai\" and no trailing slash or extra characters.\n\nOrder: write line 1, lift, write line 2 below it, lift, write line 3, lift, write line 4 below it. Ink appears only under the moving tip, never ahead, never all at once. Marker lifts the instant a line finishes -- no stray mark after any line.\n\nThen: draw a closed circle tightly around \"$5\" (line 3), one curved stroke growing under the tip. Then one straight line under the full URL on line 4 only, matching only that line's width, no overshoot onto blank space.\n\nEvery stroke stops right at its endpoint -- no overshoot, no arrowhead. Prior text/marks stay stationary, never redrawn. Her face never changes. She looks at the board throughout, camera only at the very end. No cuts or zooms. Consistent yellow line thickness, sharp edges.\n\nPhotorealistic, single continuous take, 30fps, high temporal consistency, no animation overlays.",
+  "duration": 15,
+  "resolution": "768P"
+ },
+ "anchor_image": "vera-portrait-v01.png",
+ "request_id": "01a1c774-f4f5-7770-a5aa-c8a0df1bc8b1",
+ "video_url": "https://v3b.fal.media/files/b/0ab1f511/IkMHE2-AyodiNaDKcyqQg_minimax-h3.mp4",
+ "generate_s": 30.364255905151367,
+ "file": "round41_minimax.mp4"
+}
