@@ -1,0 +1,15 @@
+{
+ "tool": "pixverse_540p",
+ "endpoint": "fal-ai/pixverse/v6/image-to-video",
+ "payload": {
+  "prompt": "A realistic, continuous 14-second video. From the very first frame she is already in the final scene: the woman from the reference image (dark bob, round graphite glasses, pale-blue stand-collar shirt, charcoal trousers, silver stud earrings, black watch on left wrist) holds a neon-yellow marker, standing at a transparent glass board, matte black background -- never the reference photo's own background or outfit. Fixed camera, medium-wide, straight-on, studio lighting, no establishing shot. Board blank at start. Glass perfectly clear -- no reflection, no ghost, no second figure; exactly one woman. Her face, hair, glasses and wardrobe never change.\n\nShe writes exactly four short lines, top to bottom, left-aligned, small compact handwriting, one line each, never wrapping:\n1. \"Human-in-the-loop review\"\n2. \"for AI in production.\"\n3. \"Pay $5 per person-hour.\"\n4. \"https://services.deepen.ai\"\nExact text, every hyphen in line 1 included. \"$5\" is a dollar sign then 5. The URL has small round periods (never dashes) between \"services\"/\"deepen\" and \"deepen\"/\"ai\", all lowercase, no trailing slash.\n\nOrder: line 1, lift, line 2 below it, lift, line 3, lift, line 4. Ink only under the moving tip, never ahead. Marker lifts the instant each line finishes -- no stray mark.\n\nThen: a closed circle tightly around \"$5\". Then one straight line under the full URL only, matching its width, no overshoot.\n\nEvery stroke stops at its endpoint -- no overshoot, no arrowhead. Prior marks stay stationary. Her face never changes. She looks at the board throughout, camera only at the very end. No cuts or zooms. Consistent yellow line thickness.\n\nPhotorealistic, single continuous take, 30fps, high temporal consistency.",
+  "duration": 14,
+  "resolution": "540p",
+  "aspect_ratio": "9:16"
+ },
+ "anchor_image": "vera-portrait-v01.png",
+ "request_id": "01a1cb87-a9f9-70a1-9f4c-4c0a0f9e6f21",
+ "video_url": "https://v3b.fal.media/files/b/0ab20fd1/tEH5_YUBTDsW7eE_eBmvQ_output.mp4",
+ "generate_s": 164.2118558883667,
+ "file": "round42_pixverse_540p.mp4"
+}

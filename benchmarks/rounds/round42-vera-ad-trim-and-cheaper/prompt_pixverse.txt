@@ -1,0 +1,16 @@
+A realistic, continuous 14-second video. From the very first frame she is already in the final scene: the woman from the reference image (dark bob, round graphite glasses, pale-blue stand-collar shirt, charcoal trousers, silver stud earrings, black watch on left wrist) holds a neon-yellow marker, standing at a transparent glass board, matte black background -- never the reference photo's own background or outfit. Fixed camera, medium-wide, straight-on, studio lighting, no establishing shot. Board blank at start. Glass perfectly clear -- no reflection, no ghost, no second figure; exactly one woman. Her face, hair, glasses and wardrobe never change.
+
+She writes exactly four short lines, top to bottom, left-aligned, small compact handwriting, one line each, never wrapping:
+1. "Human-in-the-loop review"
+2. "for AI in production."
+3. "Pay $5 per person-hour."
+4. "https://services.deepen.ai"
+Exact text, every hyphen in line 1 included. "$5" is a dollar sign then 5. The URL has small round periods (never dashes) between "services"/"deepen" and "deepen"/"ai", all lowercase, no trailing slash.
+
+Order: line 1, lift, line 2 below it, lift, line 3, lift, line 4. Ink only under the moving tip, never ahead. Marker lifts the instant each line finishes -- no stray mark.
+
+Then: a closed circle tightly around "$5". Then one straight line under the full URL only, matching its width, no overshoot.
+
+Every stroke stops at its endpoint -- no overshoot, no arrowhead. Prior marks stay stationary. Her face never changes. She looks at the board throughout, camera only at the very end. No cuts or zooms. Consistent yellow line thickness.
+
+Photorealistic, single continuous take, 30fps, high temporal consistency.

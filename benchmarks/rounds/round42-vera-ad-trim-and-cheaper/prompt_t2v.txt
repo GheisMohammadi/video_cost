@@ -1,0 +1,16 @@
+A realistic, continuous 14-second video: an Asian woman in her late twenties, dark bob just past the collarbone, thin round graphite glasses, pale-blue stand-collar shirt with turned cuffs over a gray crew-neck top, charcoal straight trousers, tiny matte silver stud earrings, black nylon-strap watch on her left wrist, bare right wrist, holds a bright neon-yellow marker in her right hand. She writes and annotates text on a transparent glass board, matte black background, from the very first frame of the video. Fixed camera, medium-wide, straight-on, studio lighting, same framing throughout, no establishing shot. Board blank at start. Glass is perfectly clear -- no reflection of her, no mirrored double, no ghost image, no second figure anywhere; exactly one woman visible throughout. Her face, hair, glasses and wardrobe stay identical for the entire clip, from the first frame to the last.
+
+She writes exactly four short lines, top to bottom, left-aligned, generous blank space between them, small compact handwriting staying on one line each, never wrapping:
+1. "Human-in-the-loop review"
+2. "for AI in production."
+3. "Pay $5 per person-hour."
+4. "https://services.deepen.ai"
+Each line reproduced exactly, character for character, including every hyphen: line 1 has a hyphen between "Human" and "in", another between "in" and "the", and another between "the" and "loop" -- three hyphens total, none skipped. "$5" is a dollar sign then "5", no period or extra digit. The URL is exactly "https://services.deepen.ai", all lowercase. Between "services" and "deepen" there is a small round dot sitting on the baseline (a period), never a horizontal dash or hyphen -- the dot between "deepen" and "ai" is the same small round dot, not a dash either. No trailing slash or extra characters.
+
+Order: write line 1, lift, write line 2 below it, lift, write line 3, lift, write line 4 below it. Ink appears only under the moving tip, never ahead, never all at once. Marker lifts the instant a line finishes -- no stray mark after any line.
+
+Then: draw a closed circle tightly around "$5" (line 3), one curved stroke growing under the tip. Then one straight line under the full URL on line 4 only, matching only that line's width, no overshoot onto blank space.
+
+Every stroke stops right at its endpoint -- no overshoot, no arrowhead. Prior text/marks stay stationary, never redrawn. Her face never changes. She looks at the board throughout, camera only at the very end. No cuts or zooms. Consistent yellow line thickness, sharp edges.
+
+Photorealistic, single continuous take, 30fps, high temporal consistency, no animation overlays.
